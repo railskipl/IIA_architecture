@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<title>Admin Panel</title>
+		<%= stylesheet_link_tag  "admin" %>
+	</head>
+	<body>
+
+		<h1 id="head">Admin Panel</h1>
+
+		<ul id="navigation">
+			<li><span class="active">Overview</span></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Users</a></li>
+			<li><% if admin_signed_in? %> 
+				<%= link_to "Sign out", destroy_admin_session_path %> 
+			<% else %> 
+				<%= link_to "sign in", new_admin_session_path %> &nbsp; 
+			<% end %>
+			</li>
+		</ul>
+		
+		<div id="content" class="container_16 clearfix">
+		
+		    
+		    <%= yield %>
+		    
+		    
+		    </div>
+
+    			<div id="foot">
+    				<i>Designed by </i><a href="http://kunalinfotech.net/">Kunal Infotech Pvt Ltd</a>
+    			</div>
+
+    	</body>
+    </html>

@@ -1,0 +1,306 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin:0;
+	padding:0;
+	background:url(../assets/home/body.jpg) repeat-y #FCFCFC;
+	font-family:Arial, Helvetica, sans-serif;
+	overflow:hidden
+}
+
+img {
+	border: 0;
+}
+
+.clear {
+	clear:both
+}
+
+
+.flash {
+	color: #000;
+}
+.flash-colour {
+	color: #da9d4d;
+}
+.blue {
+	color: #6495ff;
+}
+
+
+#wrapper {
+	width:100%;
+}
+
+#side_bar {
+	background: url(../assets/sidebar.png) no-repeat;
+	height:750px;
+	width:374px;
+	position:relative;
+	float:left;
+}
+
+#side_bar .menu {
+	width:236px;
+	height:622px;
+	position: absolute;
+	top:25px;
+	right:10px;
+	z-index:999
+}
+
+
+#side_bar .menu ul {
+	margin:0;
+	padding:0 30px 0 0;
+	list-style:none;
+	text-align:right
+}
+
+#side_bar .menu ul li {
+	margin:3px;
+}
+
+
+#main_wrapp {
+	width:68%;
+	position:relative;
+	right:0;
+	float:right
+}
+
+ .news_ticker {
+	position:absolute;
+	top:145px;
+	left:0;
+	font-size:12px;
+}
+
+
+#header {
+	height:138px;
+	border-bottom: solid 1px #7A7B7C;
+	position:relative;
+}
+
+#header .logo {
+	padding:32px 0 0 0;
+}
+
+#header .cm_logo {
+	position:absolute;
+	right:30px;
+	top:15px;
+}
+
+#content_area {
+	background:url(../assets/content_bk2.png) no-repeat;
+	height:390px;
+	position:relative;
+	top:30px;
+	margin:0px 0 0 0;
+}
+
+#content_area .advertise_area {
+	background: url(../assets/cont_right.png) no-repeat;
+	width:210px;
+	height:441px;
+	position:absolute;
+	top:12px;
+	left:670px;
+}
+
+#content_area .col_1 {
+	width:320px;
+	float:left;
+	margin:15px 0px 0 35px;
+	padding:0 0px 0 0
+}
+
+
+#content_area .col_3 {
+	width:330px;
+	float:left;
+	margin:15px 0px 0 35px;
+	padding:0 24px 0 0;
+}
+
+#content_area .col_4 {
+
+	margin:15px 0px 0 35px;
+	padding:0 24px 0 0;
+}
+
+
+
+
+
+#content_area .col_1 p {
+	margin:0;
+	padding:8px 0 0 0;
+	font-size:13px;
+	color:#CBCBCB;
+	line-height:18px;
+	font-size:11px;
+	font-family: tahoma, arial, verdana
+}
+
+#content_area .col_3 .profile_1 {
+	width:270px;
+	float:left;
+
+}
+
+#content_area .col_3 .profile_1 h3 {
+	margin:0;
+	padding:0;
+	font-size:13px;
+	color:#CCCCCC;
+	text-decoration: underline
+}
+
+#content_area .col_3 .profile_1 a{ 
+	color:#fff;
+	text-decoration:none
+}
+
+#content_area .col_3 .profile_1 p {
+	margin:0;
+	padding:5px 0 0 0;
+	font-size:11px;
+	font-family:tahoma, arial, verdana;
+	color:#ccc
+}
+
+#content_area .col_3 .profile_2 {
+	width:150px;
+	float:right;
+	text-align:left;
+	margin:0 0 0 0px
+}
+
+
+#content_area .col_3 .profile_2 h3 {
+	margin:0;
+	padding:0;
+	font-size:13px;
+	color:#CCCCCC;
+	text-decoration: underline
+}
+
+
+#content_area .col_3 .profile_2 p {
+	margin:0;
+	padding:5px 0 0 0;
+	font-size:11px;
+	font-family:tahoma, arial, verdana;
+	color:#ccc
+}
+
+
+
+
+
+#content_area .col_2 {
+	width:240px;
+	float:left;
+	margin:15px 0px 0 60px;
+	padding:0 24px 0 0
+}
+
+#content_area .col_2 h2 {
+	margin:0;
+	padding:8px 0 0 20px;
+	font-size:17px;
+	color:#fff;
+	background:url(../assets/blt.png) no-repeat 0 15px;
+}
+
+#content_area .col_2 p {
+	margin:0;
+	padding:8px 0 0 0;
+	font-size:13px;
+	color:#CBCBCB;
+	line-height:16px;
+	font-size:11px;
+	font-family: tahoma, arial, verdana
+}
+
+#content_area .col_2 ul {
+	margin:0;
+	padding:5px 0 0 10px;
+	list-style:none
+}
+
+#content_area .col_2 ul li {
+	font-size:11px;
+	color:#CBCBCB;
+	background:url(../assets/arrow.png) no-repeat 0 7px;
+	padding:4px 0 0 15px;
+}
+
+
+
+
+#content_area .col_4 {
+	width:265px;
+	float:left;
+	margin:0px 0px 0 10px;
+	padding:0 0px 0 0;
+}
+
+#content_area .col_4 h4 {
+	margin:0;
+	padding:0;
+	font-size:14px;
+	border-bottom: solid 1px #ccc;
+	color:#ccc
+}
+
+#content_area .col_4 p {
+	margin:0;
+	padding:8px 0 0 0;
+	font-size:11px;
+	font-family:tahoma, arial, verdana;
+	color:#CCCCCC;
+	line-height:15px;
+	text-align:justify
+}
+
+
+
+#content_area h1 {
+	margin:0;
+	padding:10px 0 0 35px;
+	font-size:22px;
+	color:#CBCBCB;
+	
+	
+}
+.copyright {
+	position:absolute;
+	bottom:10px;
+	text-align:right;
+	width:100%;
+	font-size:13px;
+	color:#333333;	
+	
+}
+
+.social_area {
+	position:absolute;
+	bottom:12px;
+	right:30px;
+	font-size:13px;
+	color:#333333;
+	vertical-align:top;
+	line-height:40px;
+}
+
+.social_area img {
+	vertical-align:top;
+}
+.social_area span {
+	padding:0 20px 0 0 ;
+}

@@ -1,0 +1,79 @@
+// Place all the styles related to the front controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin:0;
+	padding:0;
+	background:url(../assets/body.jpg) ;
+	overflow: hidden}
+
+html {
+	font-family: tahoma, arial, verdana;
+}
+
+img {
+	border:0;
+	padding:0;
+}
+
+a {
+	color:#9a2607;
+	outline:none;
+	border-style:none
+}
+
+a:hover {
+	color:#000000
+}
+
+
+.clr {
+	clear:both
+}
+
+#wrapper {
+	background:url(../assets/logo.png) no-repeat ;
+	height:620px;
+}
+
+#logo a{
+	background: url(../assets/logo_n.png) no-repeat center;
+	width:183px;
+	height:182px;
+	position:absolute;
+	right:220px;
+	top:100px;
+	display:block
+	
+}
+
+#logo a:hover {
+	background: url(../assets/logo_o.png) no-repeat center;
+	width:183px;
+	height:182px;
+}
+
+#slogon{
+	position:absolute;
+	right:52px;
+	top:395px;
+	display:block
+	
+}
+
+
+#copyright {
+	position:absolute;
+	bottom:10px;
+	right:190px;
+	color:#7C7C7C;
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif
+}
+
