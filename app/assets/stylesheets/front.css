@@ -1,17 +1,12 @@
-// Place all the styles related to the front controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-
-
 @charset "utf-8";
 /* CSS Document */
 
 body {
-	margin:0;
-	padding:0;
-	background:url(../assets/body.jpg) ;
-	overflow: hidden}
+margin:0;
+padding:0;
+background:url(../assets/body.jpg) ;
+overflow: hidden;
+}
 
 html {
 	font-family: tahoma, arial, verdana;

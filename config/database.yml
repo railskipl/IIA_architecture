@@ -4,7 +4,7 @@ development:
   adapter: mysql2    
   database: architechture
   username: root
-  password: root
+  password: 
  # socket: /var/run/mysqld/mysqld.sock
 
   
@@ -15,13 +15,13 @@ test:
       adapter: mysql2    
       database: architechture_test
       username: root
-      password: root
+      password: 
     #  socket: /var/run/mysqld/mysqld.sock
       
 production:
       adapter: mysql2    
       database: architechture
       username: root
-      password: root
+      password: 
     #  socket: /var/run/mysqld/mysqld.sock
   
