@@ -7,3 +7,8 @@ Command-line arguments:  -data /home/vinita/railsapp/IIA_architecture -os linux 
 
 !ENTRY org.eclipse.ui 4 4 2012-01-12 17:00:59.658
 !MESSAGE Unable to find Action Set: com.aptana.editor.php.presentation
+
+!ENTRY org.eclipse.core.resources 4 271 2012-01-12 17:25:37.724
+!MESSAGE Errors occurred while refreshing resources with the local file system.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2012-01-12 17:25:37.724
+!MESSAGE The project description file (.project) for 'IIA_architecture' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
