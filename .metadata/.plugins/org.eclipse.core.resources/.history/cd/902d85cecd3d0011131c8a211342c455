@@ -1,0 +1,36 @@
+class MessagesController < ApplicationController
+  skip_before_filter :authenticate_user!
+
+  def new
+  end
+
+  def create
+    @message = current_user.message.new(params[:contact])
+      respond_to do |format|
+    if @message.save
+      format.html { redirect_to(@message, :notice => 'messages was successfully created.') }
+      format.xml { render :xml => @message, :status => :created, :location => @message }
+    else
+      format.html { render :action => "new" }
+      format.xml { render :xml => @message.errors, :status => :unprocessable_entity }
+    end
+  end
+
+  def sent
+  end
+
+  protected
+
+  def valid_message?(message)
+    return false if message[:title].present?
+
+    [:sender_name, :sender_email, :body].each do |attr|
+      return false if message[attr].blank?
+    end
+
+    return false unless message[:sender_email].match(/\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/)
+    
+    true
+  end
+end
+end

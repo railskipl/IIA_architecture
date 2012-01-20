@@ -494,3 +494,15 @@ a.delete {
 	margin:0 0 11px 0;
 	position:relative;
 }
+
+fieldset ul {
+  margin: 0;
+  padding: 0;
+}
+fieldset li {
+  float: left;
+  list-style: none;
+  width: 220px;
+  margin: 10px 2px;
+}
+

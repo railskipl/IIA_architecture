@@ -1,0 +1,30 @@
+ <div id="content_out"><!-- content_out starts here -->
+<div id="content"><!-- content starts here -->
+                
+                	<div class="one_of_one">
+                    	<h1><%= @service.title %>  </h1>
+                    </div>
+                    
+                    <div class="two_third devide">
+                    	<%= @service.body.html_safe %> 
+                    </div>
+                    
+                     <div class="one_third devide">
+                    	<div class="sidebar_item">
+                        	<h2>SERVICES</h2>
+                            <ul class="link_list">
+                            	<li class="active"><a href="#">Careers</a></li>
+                                <li><a href="#" target="blank">Blog</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                                <li><a href="#">News/Events</a></li>
+                            </ul>
+                        </div>
+                       
+                    </div>
+                    
+                       
+                    
+                    <div class="clearfix"></div>
+                
+                </div><!-- content ends here --> 
+                </div><!-- content_out ends here --> 

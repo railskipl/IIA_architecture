@@ -1,4 +1,4 @@
-#Thu Jan 12 17:29:46 IST 2012
+#Mon Jan 16 11:42:20 IST 2012
 com.vectrace.mercurialeclipse.ui.colorsandfonts.removedBackgroundColor=66,14,9
 com.vectrace.mercurialeclipse.ui.colorsandfonts.conflictForegroundColor=248,248,248
 com.vectrace.mercurialeclipse.ui.colorsandfonts.deletedBackgroundColor=66,14,9
@@ -19,4 +19,5 @@ org.eclipse.egit.ui.UncommittedChangeForegroundColor=248,248,248
 com.vectrace.mercurialeclipse.ui.colorsandfonts.changedForegroundColor=248,248,248
 com.vectrace.mercurialeclipse.ui.colorsandfonts.addedForegroundColor=248,248,248
 com.vectrace.mercurialeclipse.ui.colorsandfonts.unknownBackgroundColor=20,20,20
+//org.eclipse.ui.commands/state/com.aptana.editor.common.commands.toggleOutline/org.eclipse.ui.commands.toggleState=false
 com.vectrace.mercurialeclipse.ui.colorsandfonts.changedBackgroundColor=74,65,13

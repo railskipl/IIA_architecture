@@ -1,0 +1,15 @@
+ARGV = []
+TRUE = true
+FALSE = false
+STDOUT = IO.new
+STDIN = IO.new
+STDERR = IO.new
+ENV = {}
+NIL = nil
+VERSION = '1.8.7'
+RUBY_PATCHLEVEL = 299
+RUBY_COPYRIGHT = 'ruby - Copyright (C) 1993-2010 Yukihiro Matsumoto'
+TOPLEVEL_BINDING = Binding.new
+RUBY_VERSION = '1.8.7'
+RUBY_PLATFORM = 'x86_64-linux'
+PLATFORM = 'x86_64-linux'

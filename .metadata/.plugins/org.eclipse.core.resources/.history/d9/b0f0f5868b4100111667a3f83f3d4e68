@@ -1,0 +1,79 @@
+<!-- page container -->
+  <div id="page"> 
+    <!-- page title -->
+    <h2 class="ribbon blue full"><%= @page.title %>  </h2>
+    <div class="triangle-ribbon blue"></div>
+    <br class="cl" />
+        
+   
+      <!-- page content -->
+    <div id="page-content" class="two-col container_12">
+      
+      <div class="grid_12">
+      	<%= @page.body.html_safe %> 
+       </div>
+    
+      <br class="cl" />
+      
+    </div>
+   
+    <!-- page sidebar -->
+   <aside>
+         <ul class="sidebar-nav">
+         <li class="current"><a href="/images/School.pdf" target="_blank">Download Brochure</a></li>
+         </ul> 
+   
+    
+       <ul class="sidebar-latestblog">
+       	<div class="wrapper col2">
+   <div id="featured_slide">
+    <div class="featured_box"><a href="#"><img height="500" width="250" src="/images/about1.jpg" alt="" /></a>
+	
+    <div class="featured_box"><a href="#"><img height="500" width="250" src="/images/about2.jpg" alt="" /></a>
+    
+    <div class="featured_box"><a href="#"><img height="500" width="250" src="/images/about3.jpg" alt="" /></a>
+      
+    </div>
+     </div>
+</div>
+       	
+       	
+   <!--    	<marquee style="position: relative;" behavior="scroll" align="center" direction="left" scrollamount="2" scrolldelay="5" onmouseover="this.stop()" onmouseout="this.start()" height="500"><br>
+
+    <li>
+      	<img height="500" width="250" class="inlinepic" src="/images/about1.jpg" alt="">
+       	<img height="500" width="250" class="inlinepic" src="/images/about2.jpg" alt="">
+       	<img height="500" width="250" class="inlinepic" src="/images/about3.jpg" alt="">
+       	<img height="500" width="250" class="inlinepic" src="/images/about4.jpg" alt="">
+       	<img height="500" width="250" class="inlinepic" src="/images/about5.jpg" alt="">
+       	<img height="500" width="250" class="inlinepic" src="/images/about6.jpg" alt="">
+       	<img height="500" width="250" class="inlinepic" src="/images/about7.jpg" alt="">
+       	<img height="500" width="250" class="inlinepic" src="/images/about8.jpg" alt="">
+       	<img height="500" width="250" class="inlinepic" src="/images/about9.jpg" alt="">
+       </li>
+   </marquee> -->
+          
+          <br class="cl" />
+        
+           </ul>
+      <!-- <h3>Twitter Feed</h3>
+      <ul id="twitter_update_list">
+        <li></li>
+      </ul>
+      <script type="text/javascript" src="../../../twitter.com/javascripts/blogger.js"></script> 
+      <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/ChrisAMooney.json?callback=twitterCallback2&amp;count=4"></script> 
+      <br class="cl" /> -->
+      <br />
+      <!-- <div class="block">
+        <h3>Socialise With Us</h3>
+        <ul class="social-list">
+          <li><a href="#"><img class="tooltip" src="img/social/32/twitter.png" title="Follow us on Twitter" alt="twitter" /></a></li>
+          <li><a href="#"><img class="tooltip" src="img/social/32/facebook.png" alt="facebook" title="Our Facebook page" /></a></li>
+          <li><a href="#"><img class="tooltip" src="img/social/32/linkedin.png" alt="linkedin" title="Our LinkedIn profile" /></a></li>
+          <li><a href="#"><img class="tooltip" src="img/social/32/rss.png" title="Grab our RSS feed" alt="rss" /></a></li>
+        </ul>
+      </div> -->
+    </aside>
+    <br class="cl" />
+    <br class="cl" />
+  </div>

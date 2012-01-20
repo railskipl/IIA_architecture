@@ -1,0 +1,31 @@
+
+
+		<%= form_for [:admin, @committees] do |f| %>
+		
+		  <p>
+		    <%= f.label :name %>
+		    <%= f.text_field :name, :class => 'text' %>
+		  </p>
+		   <p>
+		    <%= f.label :phone_no %>
+		    <%= f.text_field :phone_no, :class => 'text' %>
+		  </p>
+		   <p>
+		    <%= f.label :email %>
+		    <%= f.text_field :email, :class => 'text' %>
+		  </p>
+		    <p>
+		    <%= f.label :designation %>
+		    <%= f.text_field :designation, :class => 'text' %>
+		  </p>
+		    		 
+		  <p>
+		    <%= f.label :brief_info %>
+		    <%= f.text_area :brief_info, :class => 'tiny_mce' %>
+		  </p>
+		
+		  
+		 <%= render :partial =>"button" %>
+		
+		<% end %>
+

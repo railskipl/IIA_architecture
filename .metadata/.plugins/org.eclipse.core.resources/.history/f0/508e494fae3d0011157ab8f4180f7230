@@ -1,0 +1,10 @@
+class HomeController < ApplicationController
+  
+  def index
+    
+  end
+  
+  def pages
+      @page = Page.find(params[:id])
+   end  
+end

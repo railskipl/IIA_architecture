@@ -304,3 +304,316 @@ img {
 .social_area span {
 	padding:0 20px 0 0 ;
 }
+
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+  height:299px;
+  width:519px;
+}
+  
+#boxes .window {
+  position:absolute;
+  left:0;
+  top:0;
+  display:none;
+  z-index:9999;
+  background:url(../images/pop2.png) no-repeat;
+  height:360px;
+  width:519px;
+}
+
+#boxes #dialog2 .inner {
+	padding:20px;
+}
+
+#boxes #dialog2 .inner a {
+	font-size:11px;
+	color:#999999
+}
+
+#boxes #dialog .inner h1 {
+	font-size:20px;
+	letter-spacing:-1px;
+	border-bottom: solid 1px #ccc;
+}
+
+#boxes #dialog2 .inner p {
+	font-size:12px;
+	padding:8px 0 0 0
+}
+
+
+
+
+#boxes2 .window {
+  position:absolute;
+  left:0;
+  top:0;
+  display:none;
+  z-index:9999;
+  background: #fff;
+
+  width:519px;
+   -webkit-border-radius: 20px; 
+	-moz-border-radius: 20px;
+	border-radius:20px;
+}
+
+#boxes2 #dialog2 .inner {
+	padding:20px;
+}
+
+#boxes2 #dialog2 .inner a {
+	font-size:11px;
+	color:#999999
+}
+
+#boxes2 #dialog2 .inner h1 {
+	font-size:20px;
+	letter-spacing:-1px;
+	border-bottom: solid 1px #ccc;
+}
+
+#boxes2 #dialog2 .inner p {
+	font-size:12px;
+	padding:8px 0 0 0
+}
+
+#boxes2 .window {
+  position:absolute;
+  left:0;
+  top:0;
+  display:none;
+  z-index:9999;
+  background: #fff;
+
+  width:519px;
+   -webkit-border-radius: 20px; 
+	-moz-border-radius: 20px;
+	border-radius:20px;
+}
+
+#boxes2 #dialog3 .inner {
+	padding:20px;
+}
+
+#boxes2 #dialog3 .inner a {
+	font-size:11px;
+	color:#999999
+}
+
+#boxes2 #dialog3 .inner h1 {
+	font-size:20px;
+	letter-spacing:-1px;
+	border-bottom: solid 1px #ccc;
+}
+
+#boxes2 #dialog3 .inner p {
+	font-size:12px;
+	padding:8px 0 0 0
+}
+
+
+#boxes2 .window {
+  position:absolute;
+  left:0;
+  top:0;
+  display:none;
+  z-index:9999;
+  background: #fff;
+
+  width:400px;
+   -webkit-border-radius: 20px; 
+	-moz-border-radius: 20px;
+	border-radius:20px;
+}
+
+#boxes2 #dialog1 .inner {
+	padding:20px;
+}
+
+#boxes2 #dialog1 .inner a {
+	font-size:11px;
+	color:#999999
+}
+
+#boxes2 #dialog1 .inner h1 {
+	font-size:20px;
+	letter-spacing:-1px;
+	border-bottom: solid 1px #ccc;
+}
+
+#boxes2 #dialog1 .inner p {
+	font-size:12px;
+	padding:8px 0 0 0
+}
+
+
+
+
+
+
+
+
+
+#boxes4 .window {
+  position:absolute;
+  left:0;
+  top:0;
+  display:none;
+  z-index:9999;
+  background: #fff;
+
+  width:380px;
+   -webkit-border-radius: 20px; 
+	-moz-border-radius: 20px;
+	border-radius:20px;
+	border: solid 1px #ccc;
+}
+
+#boxes4 #dialog4 .inner {
+	padding:20px;
+}
+
+#boxes4 #dialog4 .inner a {
+	font-size:11px;
+	color:#999999
+}
+
+#boxes4 #dialog4 .inner h1 {
+	font-size:20px;
+	letter-spacing:-1px;
+	border-bottom: solid 1px #ccc;
+}
+
+#boxes4 #dialog4 .inner p {
+	font-size:12px;
+	padding:8px 0 0 0
+}
+
+
+
+
+
+
+
+
+
+#boxes5 .window {
+  position:absolute;
+  left:0;
+  top:0;
+  display:none;
+  z-index:9999;
+  background: #fff;
+
+  width:380px;
+   -webkit-border-radius: 20px; 
+	-moz-border-radius: 20px;
+	border-radius:20px;
+	border: solid 1px #ccc;
+}
+
+#boxes5 #dialog5 .inner {
+	padding:20px;
+}
+
+#boxes5 #dialog5 .inner a {
+	font-size:11px;
+	color:#999999
+}
+
+#boxes5 #dialog5 .inner h1 {
+	font-size:20px;
+	letter-spacing:-1px;
+	border-bottom: solid 1px #ccc;
+}
+
+#boxes5 #dialog5 .inner p {
+	font-size:12px;
+	padding:8px 0 0 0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#boxes6 .window {
+  position:absolute;
+  left:0;
+  top:0;
+  display:none;
+  z-index:9999;
+  background: #fff;
+
+  width:380px;
+   -webkit-border-radius: 20px; 
+	-moz-border-radius: 20px;
+	border-radius:20px;
+	border: solid 1px #ccc;
+}
+
+#boxes6 #dialog6 .inner {
+	padding:20px;
+}
+
+#boxes6 #dialog6 .inner a {
+	font-size:11px;
+	color:#999999
+}
+
+#boxes6 #dialog6 .inner h1 {
+	font-size:20px;
+	letter-spacing:-1px;
+	border-bottom: solid 1px #ccc;
+}
+
+#boxes6 #dialog6 .inner p {
+	font-size:12px;
+	padding:8px 0 0 0
+}
+
+
+
+#pagination {
+	position:absolute;
+	bottom:70px;
+	left:660px;
+}
+
+#pagination ul {
+	margin:0;
+	padding:0;
+	list-style:none
+}
+
+#pagination ul li {
+	display: inline
+	
+}
+
+#pagination ul li a {
+	font-size:11px; text-align:center;
+	padding:5px 8px 5px 8px;
+	background:#333333;
+	color:#fff;
+	text-decoration:none
+}
+
+#pagination ul li a:hover {
+	background:#000
+}
