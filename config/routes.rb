@@ -11,12 +11,13 @@ IIAArchitechture::Application.routes.draw do
      resources :committees    
     
    end
-   
+  match '/member' => 'committees#member'
   match '/home' => 'home#index'
   match '/committees' => 'committees#index'
-  match '/member' => 'committees#member'
+  match '/committees/id' => 'committees#show'
+  match '/members' => 'members#index'
   
- 
+  
 
   root :to => "front#index"
     
