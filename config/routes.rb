@@ -11,7 +11,6 @@ IIAArchitechture::Application.routes.draw do
      resources :committees    
     
    end
-  match '/member' => 'committees#member'
   match '/home' => 'home#index'
   match '/committees' => 'committees#index'
   match '/committees/:id' => 'committees#show'
