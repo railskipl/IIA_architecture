@@ -14,7 +14,7 @@ IIAArchitechture::Application.routes.draw do
   match '/member' => 'committees#member'
   match '/home' => 'home#index'
   match '/committees' => 'committees#index'
-  match '/committees/id' => 'committees#show'
+  match '/committees/:id' => 'committees#show'
   match '/members' => 'members#index'
   
   
