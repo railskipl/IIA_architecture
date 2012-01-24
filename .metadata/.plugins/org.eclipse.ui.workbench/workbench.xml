@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="22" version="2.0">
+<workbench progressCount="21" version="2.0">
 <workbenchAdvisor/>
 <window height="720" maximized="true" width="1180" x="1" y="24">
 <fastViewData fastViewLocation="1024">
@@ -23,6 +23,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="84" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="com.aptana.editor.js" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.html" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.sass" itemType="typePlaceholder" x="-1" y="-1"/>
@@ -45,19 +46,13 @@
 </editorArea>
 </editors>
 <views>
-<view id="com.aptana.terminal.views.terminal:13508ced32e" partName="Terminal">
-<viewState>
-<title>Terminal</title>
-<workingDirectory>/home/vinita/railsapp/company_site</workingDirectory>
-</viewState>
-</view>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
-<view id="com.aptana.terminal.views.terminal:13508cce01c" partName="Terminal">
+<view id="com.aptana.terminal.views.terminal:1350e317b8f" partName="IIA_architecture">
 <viewState>
-<title>Terminal</title>
-<workingDirectory>/home/vinita/railsapp/company_site</workingDirectory>
+<title>IIA_architecture</title>
+<workingDirectory>/home/vinita/railsapp/IIA_architecture</workingDirectory>
 </viewState>
 </view>
 <view id="com.aptana.explorer.view" partName="App Explorer">
@@ -77,8 +72,14 @@
 </project>
 </viewState>
 </view>
+<view id="com.aptana.terminal.views.terminal:IIA_architecture" partName="IIA_architecture">
+<viewState>
+<title>IIA_architecture</title>
+<workingDirectory>/home/vinita/railsapp/IIA_architecture</workingDirectory>
+</viewState>
+</view>
 </views>
-<perspectives activePart="com.aptana.terminal.views.terminal:13508ced32e" activePerspective="com.aptana.ui.WebPerspective">
+<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="com.aptana.ui.WebPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.aptana.ui.internal.WebPerspectiveFactory" id="com.aptana.ui.WebPerspective" label="Web"/>
 <alwaysOnActionSet id="com.aptana.browser.actionSet"/>
@@ -116,8 +117,8 @@
 <perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="org.eclipse.ui.navigator.ProjectExplorer"/>
-<view id="com.aptana.terminal.views.terminal:13508cce01c"/>
-<view id="com.aptana.terminal.views.terminal:13508ced32e"/>
+<view id="com.aptana.terminal.views.terminal:IIA_architecture"/>
+<view id="com.aptana.terminal.views.terminal:1350e317b8f"/>
 <fastViews>
 <view id="com.aptana.explorer.view" ratio="0.29970545"/>
 </fastViews>
@@ -190,8 +191,9 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@1007d5f5" ratio="0.56632656" ratioLeft="333" ratioRight="255" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="2">
-<page content="com.aptana.terminal.views.terminal:IIA_architecture" label="LabelNotFound"/>
+<folder activePageID="com.aptana.terminal.views.terminal:1350e317b8f" appearance="2" expanded="2">
+<page content="com.aptana.terminal.views.terminal:IIA_architecture" label="IIA_architecture"/>
+<page content="com.aptana.terminal.views.terminal:1350e317b8f" label="IIA_architecture"/>
 <page content="com.aptana.terminal.views.terminal:134ea8bf082" label="LabelNotFound"/>
 <page content="com.aptana.terminal.views.terminal:134e55664cd" label="LabelNotFound"/>
 <page content="com.aptana.terminal.views.terminal:134e5de2e10" label="LabelNotFound"/>
@@ -199,7 +201,10 @@
 <page content="com.aptana.terminal.views.terminal:134fa54a79f" label="LabelNotFound"/>
 <page content="com.aptana.terminal.views.terminal:134fa76a8bc" label="LabelNotFound"/>
 <page content="com.aptana.terminal.views.terminal:134fadb1bb6" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@3dcf9961" ratio="0.39965987" ratioLeft="235" ratioRight="353" relationship="4" relative="org.eclipse.ui.editorss">
@@ -229,14 +234,11 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@625918e2" ratio="0.627551" ratioLeft="369" ratioRight="219" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="com.aptana.terminal.views.terminal:13508ced32e" appearance="2" expanded="2">
-<page content="com.aptana.terminal.views.terminal:13508cce01c" label="Terminal"/>
-<page content="com.aptana.terminal.views.terminal:13508ced32e" label="Terminal"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-</presentation>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@20302f39" ratio="0.56292516" ratioLeft="331" ratioRight="257" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="com.aptana.terminal.views.terminal:13508cce01c" label="LabelNotFound"/>
+<page content="com.aptana.terminal.views.terminal:13508ced32e" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@5ea07440" ratio="0.75" ratioLeft="471" ratioRight="157" relationship="4" relative="left">
@@ -268,47 +270,47 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.erb.html" name="admin.html.erb" tooltip="company_site/app/views/layouts/admin.html.erb">
-<persistable path="/company_site/app/views/layouts/admin.html.erb"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.ruby" name="pages_controller.rb" tooltip="company_site/app/controllers/admin/pages_controller.rb">
-<persistable path="/company_site/app/controllers/admin/pages_controller.rb"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.ruby" name="services_controller.rb" tooltip="company_site/app/controllers/admin/services_controller.rb">
-<persistable path="/company_site/app/controllers/admin/services_controller.rb"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.erb.html" name="index.html.erb" tooltip="company_site/app/views/admin/services/index.html.erb">
-<persistable path="/company_site/app/views/admin/services/index.html.erb"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.erb.html" name="index.html.erb" tooltip="company_site/app/views/admin/pages/index.html.erb">
-<persistable path="/company_site/app/views/admin/pages/index.html.erb"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.ruby" name="routes.rb" tooltip="company_site/config/routes.rb">
-<persistable path="/company_site/config/routes.rb"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.ruby" name="page.rb" tooltip="company_site/app/models/page.rb">
-<persistable path="/company_site/app/models/page.rb"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.ruby" name="admin.rb" tooltip="company_site/app/models/admin.rb">
-<persistable path="/company_site/app/models/admin.rb"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.ruby" name="service.rb" tooltip="company_site/app/models/service.rb">
-<persistable path="/company_site/app/models/service.rb"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.erb.html" name="show.html.erb" tooltip="company_site/app/views/pages/show.html.erb">
-<persistable path="/company_site/app/views/pages/show.html.erb"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.erb.html" name="show.html.erb" tooltip="company_site/app/views/services/show.html.erb">
-<persistable path="/company_site/app/views/services/show.html.erb"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="development.rb" tooltip="/home/vinita/railsapp/IIA_architecture/config/environments/development.rb">
-<persistable uri="file:/home/vinita/railsapp/IIA_architecture/config/environments/development.rb"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="production.rb" tooltip="/home/vinita/railsapp/IIA_architecture/config/environments/production.rb">
-<persistable uri="file:/home/vinita/railsapp/IIA_architecture/config/environments/production.rb"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="1.html" tooltip="/home/vinita/railsapp/IIA_architecture/app/views/committees/1.html">
+<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/views/committees/1.html"/>
 </file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="index.html.erb" tooltip="/home/vinita/railsapp/IIA_architecture/app/views/committees/index.html.erb">
 <persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/views/committees/index.html.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="show.html.erb" tooltip="/home/vinita/railsapp/IIA_architecture/app/views/committees/show.html.erb">
+<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/views/committees/show.html.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="committees.html.erb" tooltip="/home/vinita/railsapp/IIA_architecture/app/views/layouts/committees.html.erb">
+<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/views/layouts/committees.html.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="routes.rb" tooltip="/home/vinita/railsapp/IIA_architecture/config/routes.rb">
+<persistable uri="file:/home/vinita/railsapp/IIA_architecture/config/routes.rb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="profile1.html" tooltip="/home/vinita/railsapp/IIA_architecture/app/views/committees/profile1.html">
+<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/views/committees/profile1.html"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="jtip.js" tooltip="/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/jtip.js">
+<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/jtip.js"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="jtip.js.coffee" tooltip="/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/jtip.js.coffee">
+<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/jtip.js.coffee"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="committees_controller.rb" tooltip="/home/vinita/railsapp/IIA_architecture/app/controllers/committees_controller.rb">
+<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/controllers/committees_controller.rb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="show.html.erb" tooltip="/home/vinita/railsapp/IIA_architecture/app/views/members/show.html.erb">
+<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/views/members/show.html.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="index.html.erb" tooltip="/home/vinita/railsapp/IIA_architecture/app/views/members/index.html.erb">
+<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/views/members/index.html.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="members.html.erb" tooltip="/home/vinita/railsapp/IIA_architecture/app/views/layouts/members.html.erb">
+<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/views/layouts/members.html.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="members_controller.rb" tooltip="/home/vinita/railsapp/IIA_architecture/app/controllers/members_controller.rb">
+<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/controllers/members_controller.rb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="application.html.erb" tooltip="/home/vinita/railsapp/IIA_architecture/app/views/layouts/application.html.erb">
+<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/views/layouts/application.html.erb"/>
 </file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="member.html.erb" tooltip="/home/vinita/railsapp/IIA_architecture/app/views/committees/member.html.erb">
 <persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/views/committees/member.html.erb"/>
