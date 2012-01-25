@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="21" version="2.0">
+<workbench progressCount="23" version="2.0">
 <workbenchAdvisor/>
 <window height="720" maximized="true" width="1180" x="1" y="24">
 <fastViewData fastViewLocation="1024">
@@ -31,7 +31,7 @@
 <coolItem id="com.aptana.editor.yaml" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.css" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.erb.html" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="com.aptana.editor.ruby" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.aptana.editor.ruby" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -40,10 +40,16 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor activePart="true" focus="true" id="com.aptana.editor.ruby" name="pages_helper.rb" partName="pages_helper.rb" title="pages_helper.rb" tooltip="/home/vinita/railsapp/IIA_architecture/app/helpers/pages_helper.rb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/vinita/railsapp/IIA_architecture/app/helpers/pages_helper.rb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
@@ -79,7 +85,7 @@
 </viewState>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="com.aptana.ui.WebPerspective">
+<perspectives activePart="com.aptana.editor.ruby" activePerspective="com.aptana.ui.WebPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.aptana.ui.internal.WebPerspectiveFactory" id="com.aptana.ui.WebPerspective" label="Web"/>
 <alwaysOnActionSet id="com.aptana.browser.actionSet"/>
@@ -190,7 +196,7 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1007d5f5" ratio="0.56632656" ratioLeft="333" ratioRight="255" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1007d5f5" ratio="0.5680272" ratioLeft="334" ratioRight="254" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="com.aptana.terminal.views.terminal:1350e317b8f" appearance="2" expanded="2">
 <page content="com.aptana.terminal.views.terminal:IIA_architecture" label="IIA_architecture"/>
 <page content="com.aptana.terminal.views.terminal:1350e317b8f" label="IIA_architecture"/>
@@ -253,7 +259,175 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/home/vinita/railsapp/IIA_architecture/config/routes.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/home/vinita/railsapp/IIA_architecture/app/views/layouts/members.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/home/vinita/railsapp/IIA_architecture/app/views/members/index.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" uri="file:/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/modal-popup.js"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" uri="file:/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/modal-popup.js.bak"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" uri="file:/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/modal-popup.js.coffee"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" uri="file:/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/jquery-latest.pack.js.coffee"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" uri="file:/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/jquery-latest.pack.js"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" uri="file:/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/jtip.js"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" uri="file:/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/jtip.js.coffee"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/home/vinita/railsapp/IIA_architecture/app/views/committees/index.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.css" uri="file:/home/vinita/railsapp/IIA_architecture/app/assets/stylesheets/layout.css"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/home/vinita/railsapp/IIA_architecture/app/views/layouts/committees.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/home/vinita/railsapp/IIA_architecture/app/helpers/pages_helper.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/home/vinita/railsapp/prom_schoolcloud/app/controllers/home_controller.rb"/>
+</editors>
+<item historyLabel="routes.rb" index="0">
+<position info="not_deleted" x="181" y="0"/>
+</item>
+<item historyLabel="modal-popup.js.bak" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="modal-popup.js.coffee" index="5">
+<position/>
+</item>
+<item historyLabel="modal-popup.js" index="3">
+<position info="not_deleted" x="0" y="1292"/>
+</item>
+<item historyLabel="modal-popup.js.coffee" index="5">
+<position/>
+</item>
+<item historyLabel="modal-popup.js" index="3">
+<position info="not_deleted" x="0" y="1292"/>
+</item>
+<item historyLabel="jquery-latest.pack.js.coffee" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="jquery-latest.pack.js" index="7">
+<position/>
+</item>
+<item historyLabel="jquery-latest.pack.js.coffee" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="jquery-latest.pack.js" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="jquery-latest.pack.js.coffee" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="index.html.erb" index="2">
+<position/>
+</item>
+<item historyLabel="jtip.js" index="8">
+<position/>
+</item>
+<item historyLabel="index.html.erb" index="2">
+<position/>
+</item>
+<item historyLabel="jtip.js.coffee" index="9">
+<position/>
+</item>
+<item historyLabel="index.html.erb" index="2">
+<position/>
+</item>
+<item historyLabel="modal-popup.js.coffee" index="5">
+<position info="not_deleted" x="26" y="0"/>
+</item>
+<item historyLabel="index.html.erb" index="2">
+<position/>
+</item>
+<item historyLabel="index.html.erb | members" index="2">
+<position/>
+</item>
+<item historyLabel="index.html.erb" index="10">
+<position info="not_deleted" x="221" y="7"/>
+</item>
+<item historyLabel="index.html.erb | members" index="2">
+<position/>
+</item>
+<item historyLabel="index.html.erb" index="10">
+<position info="not_deleted" x="221" y="7"/>
+</item>
+<item historyLabel="index.html.erb" index="2">
+<position/>
+</item>
+<item historyLabel="jtip.js" index="8">
+<position/>
+</item>
+<item historyLabel="index.html.erb" index="2">
+<position/>
+</item>
+<item historyLabel="jtip.js.coffee" index="9">
+<position/>
+</item>
+<item historyLabel="index.html.erb" index="2">
+<position/>
+</item>
+<item historyLabel="jtip.js.coffee" index="9">
+<position/>
+</item>
+<item historyLabel="index.html.erb" index="2">
+<position/>
+</item>
+<item historyLabel="jtip.js" index="8">
+<position/>
+</item>
+<item historyLabel="jtip.js.coffee" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="jtip.js" index="8">
+<position/>
+</item>
+<item historyLabel="jtip.js.coffee" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="jtip.js" index="8">
+<position/>
+</item>
+<item historyLabel="layout.css" index="11">
+<position info="not_deleted" x="4390" y="0"/>
+</item>
+<item historyLabel="members.html.erb" index="1">
+<position/>
+</item>
+<item historyLabel="committees.html.erb" index="12">
+<position info="not_deleted" x="1345" y="0"/>
+</item>
+<item historyLabel="jtip.js" index="8">
+<position info="not_deleted" x="234" y="0"/>
+</item>
+<item historyLabel="members.html.erb" index="1">
+<position/>
+</item>
+<item historyLabel="members.html.erb" index="1">
+<position/>
+</item>
+<item historyLabel="index.html.erb" index="2">
+<position/>
+</item>
+<item historyLabel="members.html.erb" index="1">
+<position/>
+</item>
+<item historyLabel="index.html.erb" index="2">
+<position info="not_deleted" x="462" y="0"/>
+</item>
+<item historyLabel="members.html.erb" index="1">
+<position info="not_deleted" x="639" y="0"/>
+</item>
+<item historyLabel="index.html.erb" index="2">
+<position info="not_deleted" x="471" y="0"/>
+</item>
+<item historyLabel="members.html.erb" index="1">
+<position info="not_deleted" x="1416" y="0"/>
+</item>
+<item historyLabel="index.html.erb" index="2">
+<position info="not_deleted" x="471" y="0"/>
+</item>
+<item historyLabel="pages_helper.rb" index="13">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="home_controller.rb" index="14">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="pages_helper.rb" index="13">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -270,50 +444,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="1.html" tooltip="/home/vinita/railsapp/IIA_architecture/app/views/committees/1.html">
-<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/views/committees/1.html"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="home_controller.rb" tooltip="/home/vinita/railsapp/prom_schoolcloud/app/controllers/home_controller.rb">
+<persistable uri="file:/home/vinita/railsapp/prom_schoolcloud/app/controllers/home_controller.rb"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="index.html.erb" tooltip="/home/vinita/railsapp/IIA_architecture/app/views/committees/index.html.erb">
-<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/views/committees/index.html.erb"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="show.html.erb" tooltip="/home/vinita/railsapp/IIA_architecture/app/views/committees/show.html.erb">
-<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/views/committees/show.html.erb"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="committees.html.erb" tooltip="/home/vinita/railsapp/IIA_architecture/app/views/layouts/committees.html.erb">
-<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/views/layouts/committees.html.erb"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="routes.rb" tooltip="/home/vinita/railsapp/IIA_architecture/config/routes.rb">
-<persistable uri="file:/home/vinita/railsapp/IIA_architecture/config/routes.rb"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="profile1.html" tooltip="/home/vinita/railsapp/IIA_architecture/app/views/committees/profile1.html">
-<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/views/committees/profile1.html"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="jtip.js" tooltip="/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/jtip.js">
-<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/jtip.js"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="jtip.js.coffee" tooltip="/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/jtip.js.coffee">
-<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/jtip.js.coffee"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="committees_controller.rb" tooltip="/home/vinita/railsapp/IIA_architecture/app/controllers/committees_controller.rb">
-<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/controllers/committees_controller.rb"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="show.html.erb" tooltip="/home/vinita/railsapp/IIA_architecture/app/views/members/show.html.erb">
-<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/views/members/show.html.erb"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="index.html.erb" tooltip="/home/vinita/railsapp/IIA_architecture/app/views/members/index.html.erb">
-<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/views/members/index.html.erb"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="pages_helper.rb" tooltip="/home/vinita/railsapp/IIA_architecture/app/helpers/pages_helper.rb">
+<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/helpers/pages_helper.rb"/>
 </file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="members.html.erb" tooltip="/home/vinita/railsapp/IIA_architecture/app/views/layouts/members.html.erb">
 <persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/views/layouts/members.html.erb"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="members_controller.rb" tooltip="/home/vinita/railsapp/IIA_architecture/app/controllers/members_controller.rb">
-<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/controllers/members_controller.rb"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="index.html.erb" tooltip="/home/vinita/railsapp/IIA_architecture/app/views/members/index.html.erb">
+<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/views/members/index.html.erb"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="application.html.erb" tooltip="/home/vinita/railsapp/IIA_architecture/app/views/layouts/application.html.erb">
-<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/views/layouts/application.html.erb"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="jtip.js" tooltip="/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/jtip.js">
+<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/jtip.js"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="member.html.erb" tooltip="/home/vinita/railsapp/IIA_architecture/app/views/committees/member.html.erb">
-<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/views/committees/member.html.erb"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="committees.html.erb" tooltip="/home/vinita/railsapp/IIA_architecture/app/views/layouts/committees.html.erb">
+<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/views/layouts/committees.html.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.css" name="layout.css" tooltip="/home/vinita/railsapp/IIA_architecture/app/assets/stylesheets/layout.css">
+<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/assets/stylesheets/layout.css"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="jtip.js.coffee" tooltip="/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/jtip.js.coffee">
+<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/jtip.js.coffee"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="index.html.erb" tooltip="/home/vinita/railsapp/IIA_architecture/app/views/committees/index.html.erb">
+<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/views/committees/index.html.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="modal-popup.js.coffee" tooltip="/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/modal-popup.js.coffee">
+<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/modal-popup.js.coffee"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="jquery-latest.pack.js" tooltip="/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/jquery-latest.pack.js">
+<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/jquery-latest.pack.js"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="jquery-latest.pack.js.coffee" tooltip="/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/jquery-latest.pack.js.coffee">
+<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/jquery-latest.pack.js.coffee"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="modal-popup.js" tooltip="/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/modal-popup.js">
+<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/modal-popup.js"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="modal-popup.js.bak" tooltip="/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/modal-popup.js.bak">
+<persistable uri="file:/home/vinita/railsapp/IIA_architecture/app/assets/javascripts/modal-popup.js.bak"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="routes.rb" tooltip="/home/vinita/railsapp/IIA_architecture/config/routes.rb">
+<persistable uri="file:/home/vinita/railsapp/IIA_architecture/config/routes.rb"/>
 </file>
 </mruList>
 </workbench>

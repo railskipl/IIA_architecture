@@ -1,4 +1,4 @@
-#Fri Jan 13 13:05:08 IST 2012
+#Tue Jan 24 18:01:29 IST 2012
 pydevOccurrenceIndicationTextStyle=BOX
 AbstractTextEditor.Color.SelectionForeground.SystemDefault=false
 currentIPColor=14,34,49
@@ -21,6 +21,7 @@ deletionIndicationColor=66,14,9
 AbstractTextEditor.Color.Background.SystemDefault=false
 additionIndicationColor=37,59,34
 xmlTagPairOccurrenceIndicationTextStyle=BOX
+lineNumberRuler=true
 pydevOccurrenceHighlighting=false
 eclipse.preferences.version=1
 writeOccurrenceIndicationColor=60,64,67
