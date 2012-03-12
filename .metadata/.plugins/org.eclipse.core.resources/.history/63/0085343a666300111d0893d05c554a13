@@ -1,0 +1,35 @@
+<%= form_for(@survey) do |f| %>
+  <% if @survey.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@survey.errors.count, "error") %> prohibited this survey from being saved:</h2>
+
+      <ul>
+      <% @survey.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+     <% end %>
+     
+  
+   
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+    
+    <%= f.fields_for :questions,:html => { :multipart => true } do |builder| %>
+    <%= render 'question_fields', :f => builder %>
+  
+    <% end %>
+   	  <p>
+      <label>Audio Review</label>
+      <%= f.file_field :mp3 %> <br />     
+      </p>
+   
+  </div>
+  <p> <%= link_to_add_fields "Add Question", f, :questions %></p>
+   <p> <%= link_to_add_fields "Add Audio", mp3 %></p>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -2,12 +2,19 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.3'
 
-gem 'mysql2', '< 0.3.7'
+#gem 'mysql2', '0.3.6'
+gem 'mysql2', '~> 0.3.4'
+#gem 'ruby-mysql'
+
 
 gem "devise", "1.2.rc"
 
-gem "friendly_id", "3.2.1"
-
+#gem "friendly_id", "3.2.1"
+#gem "paperclip", "~> 2.0"
+gem "carrierwave"
+gem "rmagick"
+gem 'cocaine'
+gem 'will_paginate', '3.0.pre2'
 
 
 # Gems used only for assets and not required
@@ -19,7 +26,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
-#gem 'therubyracer'
+gem 'prototype-rails'
+gem 'therubyracer'
 
 group :production do
    gem 'pg'

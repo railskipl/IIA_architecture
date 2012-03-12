@@ -1,0 +1,8 @@
+ <p>
+      <label>Audio Review</label>
+      <%= f.file_field :file %> <br />
+   
+ </p>
+ 
+ 
+ 

@@ -1,0 +1,27 @@
+ <p>
+      <label>Audio Review</label>
+      <%= f.file_field :file %> <br />
+   
+ </p>
+ 
+ <p>
+ 	<%= f.fields_for :assets do |assets| %>
+  	<div class="formRow">
+  		<% if assets.object.new_record? %>
+  	   <%= assets.file_field :image %>
+  	   </div>
+  	   <% end %>
+  	 <% end %>
+ </p>
+  <p>
+  	<%= f. fields_for :assets do |asset| %>
+  		<%unless asset.object.new_record? %>
+  			<div class="thumbnail">
+  				<%= link_to (image_tag(asset.object.image.url(:thumb)), asset.object.image.url(:orginal)) %>
+  			</div>
+  		 <% end %>	
+  	 <% end %>	 	
+  </p>
+ </p>
+ 
+ 

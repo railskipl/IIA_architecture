@@ -1,0 +1,5 @@
+class AddFileToAudioProducts < ActiveRecord::Migration
+  def change
+    add_column :audio_products, :file, :string
+  end
+end

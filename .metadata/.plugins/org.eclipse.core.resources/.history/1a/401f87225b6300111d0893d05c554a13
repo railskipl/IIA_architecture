@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @survey.name %>
+</p>
+
+<%= @survey.mp3_file_name %>&nbsp;&nbsp;<a href="<%= @survey.mp3.url %>" target="_blank"
+onClick="javascript:PlayerOpen('LFO&amp;#8217;s Revenge',this.href);
+return false"><img src="/assets/images/Play.png" ></a>    	
+
+<ol>
+	<% for question in @survey.questions %>
+	   <li><%= question.content %>
+	   	<ul>
+	   		<% for answer in question.answers %>
+	   		 <li><%= answer.content %></li>
+	   		<% end %>
+	   	</ul>	
+	   </li>
+	<% end %>   
+</ol>
+	
+<%= link_to 'Edit', edit_survey_path(@survey) %> |
+<%= link_to 'Back', surveys_path %>

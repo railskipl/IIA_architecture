@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;company_site/public/stylesheets/reset.css&apos; to &apos;contact.css&apos;" description="Rename resource &apos;reset.css&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="public/stylesheets/reset.css" name="contact.css" stamp="1327665906049" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;company_site/public/stylesheets/contact.css&apos; to &apos;reset.css&apos;" description="Rename resource &apos;contact.css&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="public/stylesheets/contact.css" name="reset.css" stamp="1327665984646" updateReferences="true"/>
+</session>

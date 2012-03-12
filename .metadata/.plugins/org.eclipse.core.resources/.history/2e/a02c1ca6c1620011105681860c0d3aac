@@ -1,0 +1,7 @@
+ <p class="fields">
+ 	<%= f.label :content, "Answer" %>
+    <%= f.text_field :content %> 
+    <%= link_to "destroy", post, :method => :delete, f %>
+
+    
+</p>

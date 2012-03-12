@@ -1,0 +1,23 @@
+ <div id="content_out"><!-- content_out starts here -->
+<div id="content"><!-- content starts here -->
+                
+                	<div class="one_of_one">
+                    	
+                    </div>
+                    
+                    <div class="two_third devide">
+                 	<%= @portfolio.body.html_safe %> 
+                    </div>
+                    
+                    
+                       
+                    </div>
+                    
+                       
+                    
+                    <div class="clearfix"></div>
+                   
+                
+                </div><!-- content ends here --> 
+                </div><!-- content_out ends here --> 
+                	

@@ -1,0 +1,8 @@
+class PortfoliosController < ApplicationController
+  
+  def index
+   @portfolios = Portfolio.find(:all).paginate(:per_page => 2, :page => params[:page])
+  end
+  
+  
+end

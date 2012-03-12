@@ -1,0 +1,20 @@
+Revivestore::Application.routes.draw do
+ 
+  resources :fronts 
+  resources :home 
+ resources :pages
+  root :to => "fronts#show"  
+  
+  resources :products do
+    resources :areviews, :only => [:create, :destroy]
+  end  
+  
+  resources :mopays
+      
+ 
+ match '/about' => 'pages#about'
+ match '/reading_app' => 'pages#reading_app'
+ match '/video_reviews' => 'pages#video_reviews'
+ match '/authors' => 'pages#authors'  
+
+end

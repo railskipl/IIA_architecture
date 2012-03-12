@@ -1,0 +1,8 @@
+class CreateMopays < ActiveRecord::Migration
+  def change
+    create_table :mopays do |t|
+
+      t.timestamps
+    end
+  end
+end

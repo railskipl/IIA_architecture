@@ -1,0 +1,6 @@
+  <p>
+    	<%= builder.label :content, "question" %><br/>
+    	<%= builder.text_area :content, :rows => 3 %></br/>
+       	<%= builder.label :_delete, "Remove Qusetion" %>
+    
+    </p>

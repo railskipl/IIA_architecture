@@ -1,0 +1,9 @@
+  <p>
+    	<%= f.label :content, "question" %><br/>
+    	<%= f.text_area :content, :rows => 3 %></br/>
+       	<%= f.label :_delete, "Remove Qusetion" %>
+    
+    </p>
+    <%= f.fields_for :answers do |builder| %>
+      <%= render 'answer_fields', :f => builder %>
+    <% end %>    

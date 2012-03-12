@@ -1,0 +1,14 @@
+  <p>
+    	<%= f.label :content, "question" %><br/>
+    	<%= f.text_area :content, :rows => 3 %></br/>
+       	<%= f.label :_delete, "Remove Qusetion" %>
+    
+    </p>
+    <%= f.fields_for :answers do |builder| %>
+        <p>
+        	<%= builder.lable :content, "Answer" %></br>
+        	<%= builder.text_feild :content %>
+        	<%= builder.check_box :delete %>
+        	<%= builder.lable :delete, "Remove" %>
+        </p>
+    <% end %>    

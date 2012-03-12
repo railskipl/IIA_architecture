@@ -1,0 +1,7 @@
+<div>
+<p class=fields">
+ 	<%= f.label :content, "Answer" %>
+    <%= f.text_field :content %> 
+  
+</p>
+</div>

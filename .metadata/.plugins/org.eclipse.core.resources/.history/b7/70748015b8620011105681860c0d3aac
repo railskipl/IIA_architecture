@@ -1,0 +1,6 @@
+  <p>
+   	<%= f.lable :content, "Answer" %></br>
+    <%= f.text_feild :content %>
+   
+    <%= f.lable :delete, "Remove" %>
+        </p>

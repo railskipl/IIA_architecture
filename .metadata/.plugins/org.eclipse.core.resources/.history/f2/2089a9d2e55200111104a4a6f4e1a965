@@ -1,0 +1,4 @@
+class AddFileToProducts < ActiveRecord::Migration
+  def change
+  end
+end

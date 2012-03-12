@@ -1,0 +1,15 @@
+# Be sure to restart your server when you modify this file.
+
+# Your secret key for verifying cookie session data integrity.
+# If you change this key, all old sessions will become invalid!
+# Make sure the secret is at least 30 characters and all random, 
+# no regular words or you'll be exposed to dictionary attacks.
+ActionController::Base.session = {
+  :key         => '_s_session',
+  :secret      => '565e904db246f3e5d8079f15c8520acd96c19c978e640235482b7baaffc7abe97a2326a8ad27e1aafbcb2865bb11022166d43548fe223a801960794d54c07f14'
+}
+
+# Use the database for sessions instead of the cookie-based default,
+# which shouldn't be used to store highly confidential information
+# (create the session table with "rake db:sessions:create")
+# ActionController::Base.session_store = :active_record_store

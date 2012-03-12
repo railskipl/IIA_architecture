@@ -1,0 +1,27 @@
+<!-- <p>
+      <label>Audio Review</label>
+      <%= f.file_field :file %> <br />
+   
+</p> -->
+ 
+ <p>
+ 	<%= f.fields_for :areviews do |areviews| %>
+  	<div class="formRow">
+  		<% if areviews.object.new_record? %>
+  	   <%= areviews.file_field :file %>
+  	   </div>
+  	   <% end %>
+  	 <% end %>
+ </p>
+  <p>
+  	<%= f. fields_for :areviews do |areview| %>
+  		<% unless areview.object.new_record? %>
+  			<div class="thumbnail">
+  				<%= link_to (file_tag(areview.object.file.url), areview.object.file.url) %>
+  			</div>
+  		 <% end %>	
+  	 <% end %>	 	
+  </p>
+ </p>
+ 
+ 

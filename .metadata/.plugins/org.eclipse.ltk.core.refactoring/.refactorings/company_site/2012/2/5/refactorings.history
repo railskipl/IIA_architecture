@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;company_site/app/views/pages/create.html.erb&apos; to &apos;new.html.erb&apos;" description="Rename resource &apos;create.html.erb&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="app/views/pages/create.html.erb" name="new.html.erb" stamp="1328093731502" updateReferences="true"/>
+</session>

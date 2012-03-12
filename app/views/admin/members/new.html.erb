@@ -1,0 +1,41 @@
+<%= form_for [:admin, @members], :html => { :multipart => true } do |f| %>
+	
+	  <p>
+	    <%= f.label :name %>
+	    <%= f.text_field :name, :class => 'text' %>
+	  </p>
+	   <p>
+	    <%= f.label :title %>
+	    <%= f.text_field :title, :class => 'text' %>
+	  </p>
+	   <p>
+	    <%= f.label :email %>
+	    <%= f.text_field :email, :class => 'text' %>
+	  </p>
+	    <p>
+	    <%= f.label :phone %>
+	    <%= f.text_field :phone, :class => 'text' %>
+	  </p>
+	    		 
+	  <p>
+	    <%= f.label :address %>
+	    <%= f.text_field :address, :class => 'tiny_mce' %>
+	  </p>
+	  
+	  <p>
+	    <%= f.label :description %>
+	    <%= f.text_area :description, :class => 'tiny_mce' %>
+	  </p>
+	  <p>
+	    <%= f.label :reg_no %>
+	    <%= f.text_field :reg_no, :class => 'tiny_mce' %>
+	  </p>
+	  <p>
+	    <%= f.file_field :image%>
+	  </p>
+	
+	  
+	 <%= render :partial =>"button" %>
+	
+	<% end %>
+

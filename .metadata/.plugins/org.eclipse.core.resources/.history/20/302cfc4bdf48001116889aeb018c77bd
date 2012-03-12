@@ -1,0 +1,7 @@
+#contact_form span.neccessary, #comment_form span.neccessary{ color:#63d22c;}
+#contact_form p, #comment_form p{margin:3px 0;}
+#contact_form input, #comment_form input{ border:1px solid #d7d7d7; background-color:#f7f7f7; width:100%; height:19px; padding:6px 0;}
+#contact_form textarea, #comment_form textarea{ border:1px solid #d7d7d7; background-color:#f7f7f7; width:100%;}
+#contact_form #submit, #comment_form #submit{ width:136px; height:27px; background:url(../images/contact_submit.png) no-repeat; border:none; float:right; margin-top:8px; cursor:pointer;}
+
+#contact_form input.input_error, #contact_form textarea.input_error{border:1px solid #63d22c;}

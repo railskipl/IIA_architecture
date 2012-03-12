@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demoaudio</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "soundpop.js" %>
+  <%= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js' %>
+
+  <%= csrf_meta_tags %>
+  <%= mp3_player_headers %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+  <%= f.fields_for @product do |f| %>
+
+ <p>
+      <label>Audio Review</label>
+      <%= f.file_field :file %> <br />
+     <%=   %>
+ </p>

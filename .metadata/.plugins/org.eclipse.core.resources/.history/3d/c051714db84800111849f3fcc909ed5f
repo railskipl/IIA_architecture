@@ -1,0 +1,14 @@
+class CreateOurs < ActiveRecord::Migration
+  def self.up
+    create_table :ours do |t|
+      t.string :title, :keyword
+      t.text :body, :meta_description
+
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :ours
+  end
+end

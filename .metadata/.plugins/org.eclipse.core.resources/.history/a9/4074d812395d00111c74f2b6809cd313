@@ -1,0 +1,62 @@
+<%= form_for @article, :html => {:multipart => true} do |f| %>
+  <% if @article.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@article.errors.count, "error") %> prohibited this article from being saved:</h2>
+
+      <ul>
+      <% @article.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :content %><br />
+    <%= f.text_area :content %>
+  </div>
+  <div>
+  	<%= f.fields_for :assets do |assets| %>
+  	<div class="formRow">
+  		<% if assets.object.new_record? %>
+  	   <%= assets.file_field :image %>
+  	   </div>
+  	   <% end %>
+  	 <% end %>
+  </div>
+  <div>
+  	<%= f. fields_for :assets do |asset| %>
+  		<%unless asset.object.new_record? %>
+  			<div class="thumbnail">
+  				<%= link_to(image_tag(asset.object.image.url(:thumb)), asset.object.image.url(:orginal)) %>
+  			</div>
+  		 <% end %>	
+  	 <% end %>	 	
+  </div>
+   <div>
+  	<%= f.fields_for :assets do |assets| %>
+  	<div class="formRow">
+  		<% if assets.object.new_record? %>
+  	   <%= assets.file_field :audio %>
+  	   </div>
+  	   <% end %>
+  	 <% end %>
+  </div>
+  <div>
+  	<%= f. fields_for :assets do |asset| %>
+  		<%unless asset.object.new_record? %>
+  			<div class="thumbnail">
+  				<%= link_to(asset.object.audio.url) %>
+  			</div>
+  		 <% end %>	
+  	 <% end %>	 	
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

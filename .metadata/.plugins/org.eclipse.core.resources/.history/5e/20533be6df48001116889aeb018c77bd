@@ -1,0 +1,64 @@
+ <div id="content_out"><!-- content_out starts here -->
+            	<div id="content"><!-- content starts here -->
+                
+                	<div class="one_of_one">
+                    	<h1>Contact us</h1>
+                    </div>
+                    
+                    <div class="two_third devide">
+                    	<div class="two_third_pic">
+                        	<img src="images/example_big.jpg" alt="example" />
+                        </div>
+                        <h3>Fill out the contactform</h3>
+                        <p class="add_margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor sed incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ut.</p>
+                         <% form_for :reset_password do |form| %>
+                        
+                         <p>Your Name <span class="neccessary">*</span>:</p>
+                        	<input id=":reset_password" type="text" name=":name" />
+
+       						 <p>
+          						<label for="name">Name:</label>
+         						 <%= form.text_field :name %>
+          
+       						 </p>
+       						 <p>
+         						 <label for="email">Email:</label>
+         						 <%= form.text_field :email %>
+          
+        					 </p>
+        					 <p>
+          						<label for="subject">Subject:</label>
+          						<%= form.text_field :subject %>
+        					</p>
+        					<p>
+         						 <label for="comments">Message:</label>         
+         						 <%= form.text_area :message, :rows => 4, :cols => 28 %>
+        					</p>
+        
+        					<p  align="left" style="margin: 10px 0pt 0pt 170px;"><%= submit_tag 'Send', :class => "fr" %> </p>
+        					<% end %>
+    </div>
+    		
+                    </div>
+                    
+                    <div class="one_third devide">
+                        <div class="sidebar_item">
+                        	<h2>Get in touch</h2>
+                            <p>	
+                            	<strong>Address:</strong> 55, Suyog Nagar, Ring Road, (200mts from Narendra Nagar) <br />
+                                <strong>E-mail:</strong> info@kunalinfotech.net <br />
+                            	<strong>Telephone:</strong> +91 712 3010539 <br />
+                                <strong>Skype:</strong> Kunal.infotech<br />
+                                <strong>Windows Live:</strong>Kipl.india@live.in<br />
+                                <strong>Yahoo:</strong>Kunal.infotech@yahoo.com<br />
+                              
+                            </p>
+                        </div>
+                        <div class="sidebar_item">
+                        	<iframe class="border" width="255" height="255" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.de/maps?f=q&amp;source=s_q&amp;hl=de&amp;geocode=&amp;q=New+York+City,+New+York,+USA&amp;sll=52.722986,12.65625&amp;sspn=21.754123,57.084961&amp;ie=UTF8&amp;hq=&amp;hnear=New+York+City,+Manhattan,+New+York,+Vereinigte+Staaten&amp;ll=40.714269,-74.005973&amp;spn=0.105909,0.222988&amp;z=13&amp;output=embed"></iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="clearfix"></div>
+                
+                </div><!-- content ends here --> 

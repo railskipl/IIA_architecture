@@ -1,0 +1,3 @@
+class Areview < ActiveRecord::Base
+  
+end

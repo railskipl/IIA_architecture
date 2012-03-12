@@ -1,0 +1,9 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+#form span.neccessary, #comment_form span.neccessary{ color:#63d22c;}
+#form p, #comment_form p{margin:3px 0;}
+#form input, #comment_form input{ border:1px solid #d7d7d7; background-color:#f7f7f7; width:100%; height:19px; padding:6px 0;}
+#form textarea, #comment_form textarea{ border:1px solid #d7d7d7; background-color:#f7f7f7; width:100%;}
+#form #submit, #comment_form #submit{ width:136px; height:27px; background:url(../images/contact_submit.png) no-repeat; border:none; float:right; margin-top:8px; cursor:pointer;}
+
+#form input.input_error, #contact_form textarea.input_error{border:1px solid #63d22c;}

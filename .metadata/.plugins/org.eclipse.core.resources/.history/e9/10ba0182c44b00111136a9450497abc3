@@ -1,0 +1,32 @@
+ <div id="content_out"><!-- content_out starts here -->
+<div id="content"><!-- content starts here -->
+                
+                	<div class="one_of_one">
+                    	<h1><%= @page.title %>  </h1>
+                    </div>
+                    
+                    <div class="two_third devide">
+                    	<%= @page.body.html_safe %> 
+                    </div>
+                    
+                     <div class="one_third devide">
+                    	<div class="sidebar_item">
+                        	<h2>COMPANY</h2>
+                            <ul class="link_list">
+                            	<li class="active"><a href="/pages/careers">Careers</a></li>
+                                <li><a href="http://kunalinfotech.net/wp-blog/" target="blank">Blog</a></li>
+                                <li><a href="/pages/testimonials">Testimonials</a></li>
+                                <li><a href="/pages/newsevents/">News/Events</a></li>
+                            </ul>
+                        </div>
+                       
+                    </div>
+                    
+                       
+                    
+                    <div class="clearfix"></div>
+                    
+                    <p><%= will_paginate @pages, :class=>'pagination_magArticles' %></p>
+                
+                </div><!-- content ends here --> 
+                </div><!-- content_out ends here --> 

@@ -1,0 +1,26 @@
+CompanySite::Application.routes.draw do |map|
+  devise_for :admins
+  
+  root :to => "home#index"
+  
+  resources :pages 
+  resources :services
+  
+  map.connect '/pages/:id', :controller=>'pages', :action=>'show'
+  map.connect '/services/:id', :controller=>'services', :action=>'show'  
+  map.connect '/contacts', :controller=>'home', :action=>'contact'
+  map.connect '/admin/pages/:id/delete', :controller=>'admin/pages', :action=>'destroy'
+  map.connect '/admin/services/:id/delete', :controller=>'admin/services', :action=>'destroy'
+  
+  
+  # Administration
+   namespace :admin do 
+     match '/dashboard' => "dashboard#index", :as => :root
+     
+     resources :pages 
+     resources :services
+     resources :contacts
+    end
+
+ 
+end

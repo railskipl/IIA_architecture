@@ -1,0 +1,5 @@
+ <p>	<%= f.label :content, "Answer" %>
+    <%= f.text_field :content %> 
+    <%= f.hidden_field :delete %>  
+    <%= link_to_function "Remove", "remove_fields(this)" %>
+</p>

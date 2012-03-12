@@ -8,14 +8,19 @@ IIAArchitechture::Application.routes.draw do
   
    namespace :admin do 
      match '/dashboard' => "dashboard#index", :as => :root
-     
-     resources :committees    
     
+     match '/committees/:id/delete'  => 'committees#destroy'
+     resources :committees
+     
+     match '/members/:id/delete'  => 'members#destroy'
+     resources :members    
+   
    end
   match '/home' => 'home#index'
   match '/committees' => 'committees#index'
+  
   match '/committees/:id' => 'committees#show'
-  match '/members' => 'members#index'
+ 
   
   
 

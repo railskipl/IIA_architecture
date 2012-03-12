@@ -1,0 +1,7 @@
+<div>
+<p class=fields">
+ 	<%= f.label :content, "Answer" %>
+    <%= f.text_field :content %> 
+    <%= link_to_remove_fields "Remove", f, :answers %>
+</p>
+</div>

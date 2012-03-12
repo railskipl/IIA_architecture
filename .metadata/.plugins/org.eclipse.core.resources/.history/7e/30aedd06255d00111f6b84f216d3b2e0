@@ -1,0 +1,9 @@
+class CreateAreviews < ActiveRecord::Migration
+  def change
+    create_table :areviews do |t|
+          t.integer :product_id
+      t.string :file
+      t.timestamps
+    end
+  end
+end

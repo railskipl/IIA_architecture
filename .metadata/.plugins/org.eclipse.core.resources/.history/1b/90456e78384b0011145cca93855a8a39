@@ -1,0 +1,8 @@
+class PortfoliosController < ApplicationController
+  
+  def show
+    @portfolio = Portfolio.find(params[:id]).paginate(:per_page => 5, :page => params[:portfolio])
+        
+         
+  end
+end

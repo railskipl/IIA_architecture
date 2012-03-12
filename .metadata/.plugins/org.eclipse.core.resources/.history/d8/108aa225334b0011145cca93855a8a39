@@ -1,0 +1,25 @@
+ <div id="content_out"><!-- content_out starts here -->
+<div id="content"><!-- content starts here -->
+                
+                	
+                    
+                  
+                    
+                     <div class="one_third devide">
+                    	<div class="sidebar_item">
+                        	<h2>SERVICES</h2>
+                            <ul class="link_list">
+                            	<li class="active"><a href="/services/design">Web Design</a></li>
+                                <li><a href="/services/web-programming--2">Web programming</a></li>
+                                <li><a href="/services/methodology--2">Methodology</a></li>
+                            </ul>
+                        </div>
+                       
+                    </div>
+                    
+                       
+                    
+                    <div class="clearfix"></div>
+                
+                </div><!-- content ends here --> 
+                </div><!-- content_out ends here --> 

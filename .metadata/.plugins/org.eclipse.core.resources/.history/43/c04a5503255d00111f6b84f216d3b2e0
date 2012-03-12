@@ -1,0 +1,8 @@
+class CreateAreviews < ActiveRecord::Migration
+  def change
+    create_table :areviews do |t|
+
+      t.timestamps
+    end
+  end
+end

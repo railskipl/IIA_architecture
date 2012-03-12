@@ -1,0 +1,48 @@
+class Admin::ServicesController < ApplicationController
+  
+   before_filter :authenticate_admin!, :except => []
+  
+  def index
+      @services = Service.find(:all)
+    end
+
+    def new
+      @service = Service.new
+    end
+
+    def create
+      @service = Service.new(params[:service])
+      if @service.save
+        flash[:notice] = "Services created successfully"
+        redirect_to admin_services_path
+      else
+        render :new
+      end
+    end
+    
+    def edit
+      @service = Service.find(params[:id])
+    end
+
+    def update
+      @service = Service.find(params[:id])
+      if @service.update_attributes(params[:service])
+        flash[:notice] = "Services saved successfully"
+        redirect_to admin_services_path
+      else
+        render :new
+      end
+    end
+    
+
+    def destroy
+      @service = Page.find(params[:id])
+     
+      if @service.destroy
+        flash[:notice] = "Services deleted successfully"
+        redirect_to admin_services_path
+      end
+      
+    end
+   
+end

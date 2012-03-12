@@ -1,0 +1,4 @@
+<div data-hook="homepage_products">  
+   
+  <%= render 'shared/_products', :products => @products %>
+</div>

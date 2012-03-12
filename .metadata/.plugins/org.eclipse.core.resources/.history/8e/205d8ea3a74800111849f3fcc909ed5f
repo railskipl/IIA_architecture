@@ -1,0 +1,29 @@
+ <div id="content">
+ 	<p class='buttons'>
+ 		 <%= paginate @services %>
+ 		
+ 		<%= link_to  "Add services", new_admin_service_path, :class => 'button positive' %>
+ 		</p>
+		<p class='clear'></p>
+		   
+
+			<table class="admintable">
+			  <tr class="admintablehd">
+			    <td width="25%">Title</td>
+			    <td>Description</td>
+			    <td width="27%" style="text-align: center !important;">Action</td>
+			  </tr>
+			
+			<% @services.each do |service| %>
+			  <tr>
+			    <td><%= service.title %></td>
+			    <td><%= truncate(service.body, :length => 110).html_safe %> </td>
+			    <td style="text-align: center !important;"> <%= link_to "Edit", edit_admin_service_path(service), :class=>'button positive' %> &nbsp;&nbsp; 
+				<a href="/admin/services/<%= service.id %>/delete" onclick="if(confirm('Are you sure you want to delete this service?'))  return true;  else  return false;" class="button negative" >Delete</a>
+				</td>
+			    
+			  </tr>
+			<% end %>
+			</table>
+			<br />
+</div>

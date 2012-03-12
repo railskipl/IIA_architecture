@@ -9,19 +9,10 @@
 	position: relative;
 	display: block;
 	float: left;
-	margin: 0;
-	padding: 0;
+
 }
 #fisheye_menu span {
-	position: absolute;
-	top: 100%;
-	left: 0;
-	text-align: center;
-	width: 79px;
-	padding: 1px;
-	margin: 0;
 
-	color: #333;
 
 }
 #fisheye_menu a {
@@ -33,3 +24,44 @@
 	border: 0;
 	vertical-align: top;
 }
+
+
+.home{ padding-left:135px}
+.homespan{position:absolute;top:10px;left:180px;width:79px;padding:4px;margin:0;color:#cbcbcb;font-size:13px; text-align:center}
+
+
+.committee{ padding-left:150px}
+.committeespan{position:absolute;top:10px;left:210px;width:79px;padding:4px;margin:0;color:#cbcbcb;font-size:13px; text-align:center}
+
+.md{ padding-left:160px}
+.mdspan{position:absolute;top:10px;left:215px;width:79px;padding:4px;margin:0;color:#cbcbcb;font-size:13px; text-align:center}
+
+.achievements{ padding-left:165px}
+.achievementsspan{position:absolute;top:10px;left:227px;width:79px;padding:4px;margin:0;color:#cbcbcb;font-size:13px; text-align:center}
+
+.yb{ padding-left:165px}
+.ybspan{position:absolute;top:10px;left:218px;width:79px;padding:10px;margin:0;color:#cbcbcb;font-size:13px; text-align:center}
+
+.publication{ padding-left:165px}
+.publicationspan{position:absolute;top:10px;left:220px;width:89px;padding:10px;margin:0;color:#cbcbcb;font-size:13px; text-align:center}
+
+.library{ padding-left:160px}
+.libraryspan{position:absolute;top:10px;left:210px;width:79px;padding:4px;margin:0;color:#cbcbcb;font-size:13px; text-align:center}
+
+.ahn{ padding-left:155px}
+.ahnspan{position:absolute;top:5px;left:190px;width:139px;padding:10px;margin:0;color:#cbcbcb;font-size:13px; text-align:center}
+
+.album{ padding-left:140px}
+.albumspan{position:absolute;top:10px;left:185px;width:79px;padding:4px;margin:0;color:#cbcbcb;font-size:13px; text-align:center}
+
+.sz{ padding-left:130px}
+.szspan{position:absolute;top:10px;left:180px;width:89px;padding:4px;margin:0;color:#cbcbcb;font-size:13px; text-align:center}
+
+.membership{ padding-left:110px}
+.membershipspan{position:absolute;top:10px;left:175px;width:89px;padding:4px;margin:0;color:#cbcbcb;font-size:13px; text-align:center}
+
+.wn{ padding-left:85px}
+.wnspan{position:absolute;top:10px;left:145px;width:89px;padding:4px;margin:0;color:#cbcbcb;font-size:13px; text-align:center}
+
+.contact{ padding-left:55px}
+.contactspan{position:absolute;top:10px;left:110px;width:89px;padding:4px;margin:0;color:#cbcbcb;font-size:13px; text-align:center}

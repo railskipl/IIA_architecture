@@ -1,0 +1,9 @@
+class PortfoliosController < ApplicationController
+  
+  def show
+    @service = Service.find(params[:id])
+        
+    @title = "#{@service.title}"
+      
+  end
+end

@@ -1,0 +1,6 @@
+  <p>
+   	<%= f.label :content, "Answer" %></br>
+    <%= f.text_field :content %>
+   
+    <%= f.label :delete, "Remove" %>
+        </p>

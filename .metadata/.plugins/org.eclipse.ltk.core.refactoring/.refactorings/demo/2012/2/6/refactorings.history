@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;demo/app/views/projects/index.rhtml&apos; to &apos;index.html.erb&apos;" description="Rename resource &apos;index.rhtml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="app/views/projects/index.rhtml" name="index.html.erb" stamp="1328694728134" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;demo/app/views/projects/index.html.erb&apos; to &apos;index.rhtml&apos;" description="Rename resource &apos;index.html.erb&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="app/views/projects/index.html.erb" name="index.rhtml" stamp="1328694761705" updateReferences="true"/>
+</session>

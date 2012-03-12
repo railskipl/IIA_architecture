@@ -1,0 +1,32 @@
+ <div id="content_out"><!-- content_out starts here -->
+<div id="content"><!-- content starts here -->
+             <%= paginate @services %>
+
+   
+                	
+                    
+                    <div class="two_third devide">
+                    	<%= @service.body.html_safe %> 
+                    </div>
+                    <span class="prev disabled"><%= raw(t 'views.pagination.previous') %></span>
+
+
+                     <div class="one_third devide">
+                    	<div class="sidebar_item">
+                        	<h2>SERVICES</h2>
+                            <ul class="link_list">
+                            	<li class="active"><a href="/services/design">Design</a></li>
+                                <li><a href="/services/web-programming">Web Programming</a></li>
+                                <li><a href="/services/methodology">Methodology</a></li>
+                                
+                            </ul>
+                        </div>
+                       
+                    </div>
+                    
+                       
+                    
+                    <div class="clearfix"></div>
+                
+                </div><!-- content ends here --> 
+                </div><!-- content_out ends here --> 

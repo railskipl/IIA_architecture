@@ -1,0 +1,49 @@
+class Admin::PortfoliosController < Admin::BaseController
+  
+  before_filter :authenticate_admin!, :except => []
+  
+  def index
+      @portfolios = Service.find(:all).paginate(:per_page => 5, :page => params[:portfolio])
+    end
+
+    def new
+      @portfolio = Service.new
+    end
+
+    def create
+      @portfolio = Service.new(params[:portfolio])
+      if @portfolio.save
+        flash[:notice] = "Portfolios created successfully"
+        redirect_to admin_portfolios_path
+      else
+        render :new
+      end
+    end
+    
+    def edit
+      
+    end
+
+    def update
+      @portfolio = Portfolio.find(params[:id])
+      if @portfolio.update_attributes(params[:portfolio])
+        flash[:notice] = "Portfolios saved successfully"
+        redirect_to admin_portfolios_path
+      else
+        render :new
+      end
+    end
+    
+    
+     def destroy
+      @portfolio = Portfolio.find(params[:id])
+     
+      if @portfolio.destroy
+        flash[:notice] = "Pages deleted successfully"
+        redirect_to admin_portfolios_path
+      end
+      
+    end
+
+    
+end

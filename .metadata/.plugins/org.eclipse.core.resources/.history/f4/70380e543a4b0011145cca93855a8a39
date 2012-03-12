@@ -1,0 +1,11 @@
+class Portfolio < ActiveRecord::Base
+  
+  has_friendly_id :title, :use_slug => true
+  
+  
+   def self.search(search, page)
+  paginate :per_page => 5, :page => page
+           
+  end
+  
+end

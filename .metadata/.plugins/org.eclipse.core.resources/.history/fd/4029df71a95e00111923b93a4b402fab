@@ -1,0 +1,32 @@
+<div id="content">
+    	
+		<%= form_for @product,:html => { :multipart => true } do |f| %>
+			
+
+		<p>
+		    <%= label_tag(:name, "Product Name") %>
+		    <%= f.text_field :name %>
+		  </p>
+		  
+		  <p>
+		 	<%= label_tag(:p_no, "Product No") %>
+		  	<%= f.text_field :p_no %>
+		  </p>
+		  
+		   <p>
+		 	<%= label_tag(:p_details, "Product Details") %>
+		  	<%= f.text_area :p_details %>
+		  </p>
+		   	
+		 <p>
+  	   		<%= f.file_field :audio %>
+  	  	</p>
+		
+				  
+		  <%= render :partial =>"button" %>
+		
+		
+   <% end %>
+
+	 
+  </div>

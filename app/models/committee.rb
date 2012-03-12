@@ -1,4 +1,6 @@
 class Committee < ActiveRecord::Base
+ attr_accessible :name, :phone_no, :email, :designation, :brief_info,:committee
   
-  has_friendly_id :name, :use_slug => true
+ mount_uploader :committee, CommitteeUploader 
+  
 end

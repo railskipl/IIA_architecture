@@ -1,6 +1,6 @@
 class Admin::CommitteesController < Admin::BaseController
   
-  def index
+    def index
       @committees = Committee.find(:all)
     end
 
@@ -42,6 +42,4 @@ class Admin::CommitteesController < Admin::BaseController
       end
       
     end
-   
-  
 end
