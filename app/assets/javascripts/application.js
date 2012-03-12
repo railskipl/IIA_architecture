@@ -7,11 +7,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require prototype
-//= require builder
-//= require effects
-//= require modalbox
-//= require fisheye-iutil
-//= require fisheye-iutil.min
-//= require header-menu/fisheye
 //= require_tree .
 
