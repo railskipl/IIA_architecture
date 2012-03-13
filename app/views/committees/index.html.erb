@@ -2,7 +2,7 @@
 
 <div class="col_3" style="width:880px;">
 	<% @committees.each do |committee| %>
-	   <div style="height:auto; width:260px; float:left; position:relative; overflow:visible; top:12px; left:2px;" onmouseover="showLarge(<%= committee.id %>)" onmouseout="hideLarge(<%= committee.id %>)"><%= image_tag committee.committee_url(:thumb) ,:align => :left, :class => 'avtar'  %>
+	   <div style="height:auto; width:265px; float:left; position:relative; overflow:visible; top:12px; left:2px;" onmouseover="showLarge(<%= committee.id %>)" onmouseout="hideLarge(<%= committee.id %>)"><%= image_tag committee.committee_url(:thumb) ,:align => :left, :class => 'avtar'  %>
     		 <div style="float:left; width:200px; color:#FFFFFF; margin:0 0 0 10px"><%= committee.name%></div>
         		<div id="<%= committee.id %>_mouseover" style="position: absolute; top:0px; left:110px; z-index: 10000; background:#FFFFFF; font-weight:normal; display: none; border:2px solid #cccccc">
             		<div id="JT_arrow_left"></div>
