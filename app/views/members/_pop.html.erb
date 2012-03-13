@@ -1,13 +1,13 @@
 <div >
 
-<div id="dialog1" class="window" style="margin:55px 0px 0px 210px;">
+<div id="dialog2" class="window">
 <div class="inner" style="font-weight:normal;">
-<div style="padding-right:10px; text-align:right"><a href="#"class="close" style="font-size:11px; text-align:right"/>close  x</a></div>
+
 <div>
-	<img src="images/avtar.png" alt="" align="left"  style="padding-right:10px;"/><p style="color:#990000; margin:0; padding:0px 0 0 0"><strong><%= @members.name %></strong></p>
+	<p><%= image_tag("#{@members.image_url(:thumb)}", :align => :left, :class => "profile_image") %></p><p style="color:#990000; margin:0; padding:0px 0 0 0"><strong><%= @members.name %></strong></p>
     <p style="color:#000; margin:0; padding:8px 0 0 0"><strong>Designation</strong> : <%= @members.title %></p>
-    <p style="color:#000; margin:0; padding:15px 0 0 0"><strong>Brief Description</strong> : </p>
-    <p style="color:#000; margin:0; padding:8px 0 0 0; text-align:justify"><%= @members.description %></p>
+    <p style="color:#000; margin:0; padding:15px 0 0 0"><strong>Brief Description</strong> :<%= @members.description %> </p>
+    
 </div>
 </div>
 </div>

@@ -621,3 +621,23 @@ img {
 }
 
 .avtar{padding: 0 5px 25px 0}
+
+ #dialog2 .inner {
+	padding:20px;
+}
+
+#dialog2 .inner a {
+	font-size:11px;
+	color:#999999
+}
+
+#dialog2 .inner h1 {
+	font-size:20px;
+	letter-spacing:-1px;
+	border-bottom: solid 1px #ccc;
+}
+
+#dialog2 .inner p {
+	font-size:12px;
+	padding:8px 0 0 0
+}

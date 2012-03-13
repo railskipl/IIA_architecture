@@ -377,4 +377,17 @@ img {
 	padding:0 20px 0 0 ;
 }
 
+#JT_arrow_left{
+    background-image: url(../assets/arrow_left.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: absolute;
+    z-index:101;
+    left:-12px;
+    height:23px;
+    width:10px;
+    top:-4px;
+}
+
+
 

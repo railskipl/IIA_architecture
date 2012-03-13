@@ -8,6 +8,7 @@
    <% @members.each do |member|%>
     	<!-- Row 1 start -->
         <div class="profile_1">
+        	
         <%= link_to image_tag("#{member.image_url(:thumb)}", :align => :left, :class => "profile_image"), {:controller=>"members",:action => 'show', :id=>"#{member.id}"}, :remote => true %>
         	
             <h3>

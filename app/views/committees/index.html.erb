@@ -2,13 +2,26 @@
 
 <div class="col_3" style="width:880px;">
 	<% @committees.each do |committee| %>
-    	<div class="profile_1">
-        	
-        	<%= image_tag committee.committee_url(:thumb) ,:align => :left, :class => 'avtar'  %>
-            <h3><a href="/1.html.erb?width=400" class="jTip" id="one"><%= committee.name%></a></h3>
-            <div class="clear"></div> 
-            </div>
-	<% end %>
+	   <div style="height:auto; width:300px; float:left; position:relative; overflow:visible; top:12px; left:2px;" onmouseover="showLarge(<%= committee.id %>)" onmouseout="hideLarge(<%= committee.id %>)"><%= image_tag committee.committee_url(:thumb) ,:align => :left, :class => 'avtar'  %>
+    		 <div style="float:left; width:200px; color:#FFFFFF; margin:0 0 0 10px"><%= committee.name%></div>
+        		<div id="<%= committee.id %>_mouseover" style="position: absolute; top:0px; left:110px; z-index: 10000; background:#FFFFFF; font-weight:normal; display: none; border:2px solid #cccccc">
+            		<div id="JT_arrow_left"></div>
+                		<table width="300px" border="0" cellspacing="0" cellpadding="5">
+  							<tr>
+   					 			<td valign="top" style="background-color:#CCCCCC"> <strong><%= committee.name%></strong></td>
+  							</tr>
+  							<tr>
+    							<td>
+			   						<p><img src="images/avtar.png" alt="" align="left" style="margin:0 10px 0 0px;" />
+			   						<p><strong>Designation : <%= committee.designation%></strong></p>
+			   						<p><strong>Description : </strong><%= committee.brief_info%></p>
+			  						<h3><a href="#">Year Book</a></h3>
+   								</td>
+  							</tr>
+						</table>
+              	</div>
+        	</div>
+		<% end %>
 	<div id="pagination">
 	<ul>
     	<li><%= will_paginate @members %></li>
