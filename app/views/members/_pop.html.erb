@@ -1,19 +1,30 @@
-<div >
-
-<div id="dialog2" class="window">
-<div class="inner" style="font-weight:normal;">
-
 <div>
-	<p><%= image_tag("#{@members.image_url(:thumb)}", :align => :left, :class => "profile_image") %></p><p style="color:#990000; margin:0; padding:15px 0 0 118px"><strong><%= @members.name %></strong></p>
-    <p style="color:#000; margin:0; padding:8px 0 0 118px"><strong>Designation</strong> : <%= @members.title %></p>
-    <p style="color:#000; margin:0; padding:12px 0 0 118px"><strong>Registration Number</strong> :<%= @members.reg_no %> </p>
-    <p style="color:#000; margin:0; padding:12px 0 0 118px"><strong>Email Address </strong> :<%= @members.email %> </p>
-    <p style="color:#000; margin:0; padding:15px 0 0 118px"><strong>Brief Description</strong> :<%= @members.description %> </p>
-    
-    <h3><a href="#">Year Book</a></h3>
-    
-</div>
-</div>
-</div>
-
+	<div id="dialog2" class="window">
+		<div class="inner" style="font-weight:normal;">
+			<div>
+				<p>
+					<%= image_tag("#{@members.image_url(:thumb)}", :align => :left, :class => "profile_image") %>
+				</p>
+				<p style="color:#990000; margin:0; padding:15px 0 0 118px">
+						<strong>
+							<%= @members.name %>
+						</strong>
+				</p>
+			    <p style="color:#000; margin:0; padding:8px 0 0 118px">
+			    	<strong>Designation</strong> : <%= @members.title %>
+			    </p>
+			    <p style="color:#000; margin:0; padding:12px 0 0 118px">
+			    	<strong>Registration Number</strong> :<%= @members.reg_no %> 
+			    </p>
+			    <p style="color:#000; margin:0; padding:12px 0 0 118px">
+			    	<strong>Email Address </strong> :<%= @members.email %> 
+			    </p>
+			    <p style="color:#000; margin:0; padding:15px 0 0 118px">
+			    	<strong>Brief Description</strong> :<%= @members.description %> 
+			    </p>
+			    
+			    <h3><a href="#">Year Book</a></h3>
+			</div>
+		</div>
+	</div>
 </div>
