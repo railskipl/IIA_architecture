@@ -1,0 +1,41 @@
+
+    <h1>Publications</h1>
+    <br>
+    
+   <div class="col_3" style="width:880px;">
+   
+   
+   <% @publications.each do |publication|%>
+    	<!-- Row 1 start -->
+        <div class="profile_1">
+        	<h3><%= link_to "#{publication.author}", {:controller=>"publications",:action => 'show', :id=>"#{publication.id}"}, :remote => true %>
+            
+            	<%= link_to "#{publication.title}", {:controller=>"publications",:action => 'show', :id=>"#{publication.id}"}, :remote => true %>
+            </h3>
+			<div class="clear"></div>  
+        </div>
+        
+<!-- Row 1 start -->
+			<div id="modal-box" style="display:none;"></div>
+        
+       <% end %> 
+        
+		
+
+
+		
+
+<div id="pagination">
+	<ul>
+    	<li><%= will_paginate @publication %></li>
+    </ul>
+</div>
+
+
+
+
+      <!-- Row 3 end -->
+        <div class="clear"></div>
+             
+           
+    

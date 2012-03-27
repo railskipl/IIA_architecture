@@ -5,6 +5,7 @@ IIAArchitechture::Application.routes.draw do
    resources :committees  
    resources :members  
    resources :awards
+   resources :publications
   
    namespace :admin do 
      match '/dashboard' => "dashboard#index", :as => :root
@@ -20,7 +21,7 @@ IIAArchitechture::Application.routes.draw do
      resources :awards 
       match '/albums/:id/delete' => "albums#destroy"   
      resources :albums
-     
+     match '/publications/:id/delete' => "publications#destroy"
      resources :publications
     
    

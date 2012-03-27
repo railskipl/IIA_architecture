@@ -1,0 +1,23 @@
+<%= form_for [:admin, @publication] do |f| %>
+		
+		 <p>
+	    <%= f.label :title %>
+	    <%= f.text_field :title, :class => 'text' %>
+	  </p>
+	   <p>
+	    <%= f.label :author %>
+	    <%= f.text_field :author, :class => 'text' %>
+	  </p>
+	   <p>
+	    <%= f.label :description %>
+	    <%= f.text_area :description, :class => 'text' %>
+	  </p>
+	    
+	  <p>
+	    <%= f.file_field :pdf%>
+	  </p>
+ <%= render :partial =>"button" %>
+		
+<% end %>
+
+
