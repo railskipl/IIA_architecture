@@ -1,0 +1,19 @@
+<%= link_to  "Add Award", new_admin_award_path, :class => 'button positive' %>
+
+<table class="admintable">
+  <tr class="admintablehd">
+    <th width="25%">Title</th>
+    <th width="25%">Description</th>
+    <th width="25%" style="text-align: center !important;">Action</th>
+  </tr>
+
+<% @awards.each do |award| %>
+  <tr>
+    <td><%= award.title %></td>
+    <td><%= award.description %></td>
+    <td style="text-align: center !important;"> <a href="/admin/awards/<%= award.id %>/show">Show</a>|<%= link_to "Edit", edit_admin_award_path(award), :class=>'button positive' %> &nbsp;&nbsp;</td> 
+	  <td><a href="/admin/awards/<%= award.id %>/delete" :onclick="if(confirm('Are you sure you want to delete this Award?'))  return true;  else  return false;" :class="button negative" >Delete</a></td>
+	
+  </tr>
+<% end %>
+</table>

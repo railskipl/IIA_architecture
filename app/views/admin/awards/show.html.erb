@@ -1,0 +1,59 @@
+<%= javascript_include_tag "/assets/swfobject.js", "/assets/jquery.uploadify.v2.1.0.js" %>
+<script type="text/javascript" charset="utf-8">
+
+jQuery(document).ready(function() {
+	
+	jQuery('#album_photo').click(function(event){ 
+		event.preventDefault();
+	}); 
+	
+	jQuery('#album_photo').uploadify({
+  	uploader : '/assets/uploadify/uploadify.swf',
+		cancelImg : '/assets/uploadify/cancel.png',
+		multi : true,
+		auto : true,
+  	script : '/admin/albums',
+		onComplete : function(event, queueID, fileObj, response, data) { 
+			var dat = eval('(' + response + ')');
+			jQuery.getScript(dat.upload);},
+  	scriptData : {
+	        '_http_accept': 'application/javascript',
+					'format' : 'json',
+	        '_method': 'post',
+	        
+	        'award_id' : '<%= @award.id %>'
+	      }
+	});
+	
+	jQuery('#upload_submit').click(function(event){ 
+			event.preventDefault(); 
+			jQuery('#album_photo').uploadifyUpload(); 
+		});
+		
+}); 
+</script>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name: </b>
+  <%= @award.title %>
+</p>
+
+<h3 id="photos_count"><%= pluralize(@award.albums.size, "Photo")%></h3>
+<div id="uploads">
+
+     
+     <%= render :partial => @award.albums %>
+</div>
+
+     <h3>Upload a Photo</h3> 
+  <%= form_for [:admin, Album.new(:award_id => @award.id)], :html => {:multipart => true} do |f| %> 
+	    <%= f.hidden_field :award_id, :value => @award.id %>
+      <p>
+      <%= f.file_field :photo %> </p>
+ <% end %>
+
+
+
+

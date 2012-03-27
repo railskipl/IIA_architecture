@@ -1,0 +1,11 @@
+<%= form_for [:admin, @award], :html => { :multipart => true } do |f| %>
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title, :class => 'text' %>
+  </p>
+  <p>
+    <%= f.label :description %>
+    <%= f.text_area :description, :class => 'text'%>
+  </p>
+  <%= render :partial =>"button" %>
+<% end %>

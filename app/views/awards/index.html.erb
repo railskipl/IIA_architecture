@@ -1,0 +1,25 @@
+<div id="content_area">
+<h1>Awards / Achivements</h1>
+
+<div class="col_3" style="width:880px;">
+	
+	<% @awards.each do |award| %>
+		<div class="profile_1">
+			<%= link_to "#{award.title}",{:controller=>"awards",:action => 'show', :id=>"#{award.id}"}, :remote => true  %>
+			
+			<% albums = Album.find_by_award_id(award.id, :limit => 1)%>
+			<%= link_to image_tag("#{albums.photo_url(:thumb)}" ,:align => :left, :class => 'profile_image'), {:controller=>"awards",:action => 'show', :id=>"#{award.id}"}, :remote => true %>
+			
+		 
+		<div class="clear"></div>  
+        </div>
+        
+	<div id="modal-box" style="display:none;"></div>
+	<% end %>
+	<div id="pagination">
+	<ul>
+    	<li><%= will_paginate @awards %></li>
+    </ul>
+</div>
+ </div>
+</div>

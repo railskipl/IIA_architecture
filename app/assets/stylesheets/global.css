@@ -104,6 +104,11 @@ margin:20px;
 	padding-top: 2px;
 	font-weight:bold;
 }
+.award_wrap{ width:800px; height:auto; float:left; margin:10px 0 0 35px}
+.award_heading{ font-size:14px; color:#FFFFFF; font-weight:bold;}
+.award_details{ width:600px; height:auto; float:left;}
+.award_profile{ width:100px; height:100px; float:left; margin:0 20px 0 0}
+
 
 #JT_copy p{
 margin:3px 0;font-size:12px;
@@ -117,3 +122,6 @@ margin:3px 0;font-size:12px;
 .jTip{
 cursor:default;
 }
+
+
+
