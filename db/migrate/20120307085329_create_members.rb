@@ -6,7 +6,7 @@ class CreateMembers < ActiveRecord::Migration
       t.string :email
       t.string :phone
       t.string :address
-      t.string :description 
+      t.test :description 
       t.string :reg_no
       t.string :image
 
