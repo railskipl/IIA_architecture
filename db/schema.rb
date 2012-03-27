@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(:version => 20120319090710) do
 
   create_table "awards", :force => true do |t|
     t.string   "title"
-    t.string   "description"
+    t.text   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -61,7 +61,7 @@ ActiveRecord::Schema.define(:version => 20120319090710) do
     t.string   "email"
     t.string   "phone"
     t.string   "address"
-    t.string   "description"
+    t.text   "description"
     t.string   "reg_no"
     t.string   "image"
     t.datetime "created_at"
