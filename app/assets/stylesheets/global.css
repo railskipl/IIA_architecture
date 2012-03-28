@@ -128,5 +128,6 @@ margin:3px 0;font-size:12px;
 cursor:default;
 }
 
-
+.pdf{ color:#990000 !important; font-size:13px !important; font-weight:bold !important;}
+        .pdf:hover{ color:#FF0000 !important;}
 

@@ -12,10 +12,10 @@
 			    	<strong>Author</strong> : <%= @publications.author %>
 			    </p>
 			    <p style="color:#000; margin:0; padding:12px 0 0 31px">
-			    	<strong>Description</strong> :<%= truncate(@publications.description, :length => 110).html_safe %> 
+			    	<strong>Description</strong> :<%= truncate(@publications.description, :length => 200).html_safe %> 
 			    </p>
 			    
-			    <h3><%= link_to("Download Pdf ", @publications.pdf_url) %></h3>
+			   <span style="float:right"> <h2><%= link_to("Download PDF ", @publications.pdf_url, :class => :pdf) %></h2></span>
 			</div>
 		</div>
 	</div>
