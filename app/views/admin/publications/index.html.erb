@@ -15,7 +15,7 @@
   <tr>
     <td><%= publication.title %></td>
     <td><%= publication.author %></td>
-    <td><%= publication.description %></td>
+    <td><%= truncate(publication.description, :length => 110).html_safe %></td>
     <td style="text-align: center !important;"> <%= link_to "Edit", edit_admin_publication_path(publication), :class=>'button positive' %> &nbsp;&nbsp;</td> 
 	<td><a href="/admin/publications/<%= publication.id %>/delete" :onclick="if(confirm('Are you sure you want to delete this Publication?'))  return true;  else  return false;" :class="button negative" >Delete</a></td>
 	
