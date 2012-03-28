@@ -318,7 +318,7 @@ img {
 	text-decoration:none
 }
 
-.profile_image{padding-right:5px; padding-bottom:20px; padding-left: 34px; width:65px; height:65px}
+.profile_image{padding-right:5px; padding-bottom:20px; width:65px; height:65px}
 #mask {
   position:absolute;
   left:0;
