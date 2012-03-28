@@ -1,19 +1,23 @@
 
     <h1>Publications</h1>
     <br>
-    
-   <div class="col_3" style="width:880px;">
-   
+ <div class="award_wrap">
+   <table class="p_table" width="95%" border="0" cellspacing="0" cellpadding="10">
+   	 <tr>
+    <td width="70%" align="left" valign="top" class="p_table_bg">Title</td>
+    <td width="30%" align="left" valign="top" class="p_table_bg">Author Name </td>
+  </tr>
    
    <% @publications.each do |publication|%>
     	<!-- Row 1 start -->
-        <div class="profile_1">
-        	<h3><%= link_to "#{publication.author}", {:controller=>"publications",:action => 'show', :id=>"#{publication.id}"}, :remote => true %>
-            
-            	<%= link_to "#{publication.title}", {:controller=>"publications",:action => 'show', :id=>"#{publication.id}"}, :remote => true %>
-            </h3>
+        <tr>
+        	<td align="left" valign="top" class="p_td_bg"><%= link_to "#{publication.title}", {:controller=>"publications",:action => 'show', :id=>"#{publication.id}"}, :remote => true %></td>
+   			 <td align="left" valign="top" class="p_td_bg"><%= link_to "#{publication.author}", {:controller=>"publications",:action => 'show', :id=>"#{publication.id}"}, :remote => true %></td>
+        
+             
+       </tr>
 			<div class="clear"></div>  
-        </div>
+       
         
 <!-- Row 1 start -->
 			<div id="modal-box" style="display:none;"></div>
@@ -23,8 +27,8 @@
 		
 
 
-		
-
+</table>
+</div>
 <div id="pagination">
 	<ul>
     	<li><%= will_paginate @publication %></li>

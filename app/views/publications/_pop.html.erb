@@ -3,18 +3,19 @@
 		<div class="inner" style="font-weight:normal;">
 			<div>
 				
-				<p style="color:#990000; margin:0; padding:15px 0 0 118px">
+				<p style="color:#990000; margin:0; padding:3px 0 0 31px">
 						<strong>
 							<%= @publications.title %>
 						</strong>
 				</p>
-			    <p style="color:#000; margin:0; padding:8px 0 0 118px">
+			    <p style="color:#000; margin:0; padding:8px 0 0 31px">
 			    	<strong>Author</strong> : <%= @publications.author %>
 			    </p>
-			    <p style="color:#000; margin:0; padding:12px 0 0 118px">
-			    	<strong>Description</strong> :<%= @publications.description %> 
+			    <p style="color:#000; margin:0; padding:12px 0 0 31px">
+			    	<strong>Description</strong> :<%= truncate(@publications.description, :length => 110).html_safe %> 
 			    </p>
-			    <h3><a href="#">Download Pdf Version</a></h3>
+			    
+			    <h3><%= link_to("Download Pdf ", @publications.pdf_url) %></h3>
 			</div>
 		</div>
 	</div>
