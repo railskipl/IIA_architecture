@@ -8,7 +8,7 @@
 			<%= link_to "#{award.title}",{:controller=>"awards",:action => 'show', :id=>"#{award.id}"}, :remote => true  %>
 			
 			<% albums = Album.find_by_award_id(award.id, :limit => 1)%>
-			<%= link_to image_tag("#{albums.photo_url(:thumb)}" ,:align => :left, :class => 'profile_image'), {:controller=>"awards",:action => 'show', :id=>"#{award.id}"}, :remote => true %>
+			<%= link_to image_tag("#{albums.photo_url(:big_thumb)}" ,:align => :left, :class => 'profile_image'), {:controller=>"awards",:action => 'show', :id=>"#{award.id}"}, :remote => true %>
 			
 		 
 		<div class="clear"></div>  
