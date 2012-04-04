@@ -1,0 +1,26 @@
+
+<h1>Lectures &amp; Functions</h1>
+<div class="award_wrap">
+	<div class="award_profile">
+		
+			<% lectures = Lecture.find_by_lectures_id(@lectures.id, :limit => 1)%>
+			<%= image_tag lecture.lphoto_url(:thumb) %>
+	</div>
+	<div class="award_details">
+		<span class="award_heading"><%= @lectures.title%></span>
+		<p><%= @lectures.description%></p>
+	</div>	
+	<div id="gallery">
+		<ul>
+			<% lectures = Lecture.find_all_lectures_id(@lectures.id)%>
+			<% lectures.each do |lecture| %>
+				<li>
+					<%= link_to image_tag(lecture.lphoto.url(:thumb)), lecture.lphoto.url() %>
+				</li>
+			<% end %>
+			
+		</ul>
+	</div>	
+	
+</div>
+

@@ -22,7 +22,7 @@
 			    <td><%= committee.email %></td>
 			    <td><%= committee.designation %></td>
 			    <td><%= image_tag committee.committee_url(:thumb) if committee.committee? %></td>
-			    <td><%= truncate(committee.brief_info, :length => 110) %> </td>
+			    <td><%= truncate(committee.brief_info, :length => 110).html_safe %> </td>
 			    <td style="text-align: center !important;"> <%= link_to "Edit", edit_admin_committee_path(committee), :class=>'button positive' %> &nbsp;&nbsp;</td> 
 				  <td><a href="/admin/committees/<%= committee.id %>/delete" :onclick="if(confirm('Are you sure you want to delete this Committee Member?'))  return true;  else  return false;" :class="button negative" >Delete</a></td>
 				

@@ -1,0 +1,22 @@
+<div>
+	<div id="dialog2" class="window">
+		<div class="inner" style="font-weight:normal;">
+			<div>
+				<p>
+					<%= image_tag("#{@lectures.lphoto_url(:thumb)}", :align => :left, :class => "profile_image") %>
+				</p>
+				<p style="color:#990000; margin:0; padding:15px 0 0 118px">
+						<strong>
+							<%= @lectures.title %>
+						</strong>
+				</p>
+			    <p style="color:#000; margin:0; padding:8px 0 0 118px">
+			    	<strong>Description</strong> : <%= @lectures.description %>
+			    </p>
+			    
+			    
+			    <h3><a href="#">Year Book</a></h3>
+			</div>
+		</div>
+	</div>
+</div>

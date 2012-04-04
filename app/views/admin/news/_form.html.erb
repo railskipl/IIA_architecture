@@ -1,0 +1,17 @@
+<%= form_for [:admin, @news], :html => { :multipart => true } do |f| %>
+
+<p>
+<%= f.label :title%>
+<%= f.text_field :title, :class => 'text'%>
+</p>
+
+<p>
+	<%= f.label :description %>
+	<%= f.text_area :description, :class => 'text' %>
+</p>
+
+<p><%= f.file_field :news_photo %></p>
+
+<p><%= f.submit 'Create News / Lectures'%></p>
+
+<% end %>

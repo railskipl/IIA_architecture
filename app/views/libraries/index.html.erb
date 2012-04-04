@@ -1,0 +1,25 @@
+<div class="news_heading">Library</div>
+	<% @libraries.each do |library|%>
+	
+	<div class="lectures_wrap">
+<div id="modal-box" style="display:none;"></div>
+	 	<div class="lectures_profile">
+	 	
+       	  <%= link_to image_tag("#{library.book_cover_url(:thumb)}", :align => :left, :class => "profile_image"), {:controller=>"libraries",:action => 'show', :id=>"#{library.id}"}, :remote => true, :class => 'lectures_link' %>
+       	</div>
+		<div class="award_details">
+
+		  <%= link_to "#{library.book_name}", {:controller=>"libraries",:action => 'show', :id=>"#{library.id}"}, :remote => true, :class => 'lectures_link' %> </div>	
+      </div>    
+ 	<% end %>
+  <div id="pagination">
+    <ul>
+    	<li><%= will_paginate @libraries %></li>
+    </ul>
+   
+</div>
+ 
+  </div>
+	  <div id="content_area_bottom"></div> 
+	  
+	  

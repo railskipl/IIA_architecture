@@ -1,0 +1,30 @@
+<div class="news_heading">News &amp; Events</div>
+<div class="award_heading">What's New</div>
+<div>
+      <% @news.each do |news|%>
+     	<p><%= news.title %>: <%= news.description %></p>
+     <% end %>
+</div>
+    
+    
+  <div class="lectures_heading">Lectures and Functions </div>
+  
+  	<% @lectures.each do |lecture|%>
+	  	<div class="lectures_profile">
+	       	<%= link_to image_tag("#{lecture.lphoto_url(:thumb)}", :align => :left, :class => "profile_image"), {:controller=>"news",:action => 'show', :id=>"#{lecture.id}"}, :remote => true %>
+	   </div>
+		<div class="award_details">
+			<%= link_to "#{lecture.title}", {:controller=>"news",:action => 'show', :id=>"#{lecture.id}"}, :remote => true, :class =>'lectures_link'  %> 
+			
+	  	</div>  
+  	<% end %>
+    
+ 
+  <div id="pagination">
+    <ul>
+    	<li><%= will_paginate @lectures %></li>
+    </ul>
+   
+</div>
+ </div>
+      <div id="content_area_bottom"></div> 

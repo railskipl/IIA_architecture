@@ -1,0 +1,23 @@
+<%= form_for [:admin, @library] do |f| %>
+		
+		 <p>
+	    <%= f.label :book_name %>
+	    <%= f.text_field :book_name, :class => 'text' %>
+	  </p>
+	   <p>
+	    <%= f.label :author %>
+	    <%= f.text_field :author, :class => 'text' %>
+	  </p>
+	   <p>
+	    <%= f.label :description %>
+	    <%= f.text_area :description, :class => 'text' %>
+	  </p>
+	    
+	  <p>
+	    <%= f.file_field :book_cover%>
+	  </p>
+ <%= render :partial =>"button" %>
+		
+<% end %>
+
+

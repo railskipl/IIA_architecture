@@ -1,0 +1,24 @@
+<div>
+	<div id="dialog2" class="window">
+		<div class="inner" style="font-weight:normal;">
+			<div>
+				<p>
+					<%= image_tag("#{@libraries.book_cover_url(:thumb)}", :align => :left, :class => "profile_image") %>
+				</p>
+				<p style="color:#990000; margin:0; padding:3px 0 0 31px">
+						<strong>
+							<%= @libraries.book_name %>
+						</strong>
+				</p>
+			    <p style="color:#000; margin:0; padding:8px 0 0 31px">
+			    	<strong>Author</strong> : <%= @libraries.author %>
+			    </p>
+			    <p style="color:#000; margin:0; padding:12px 0 0 31px">
+			    	<strong>Description</strong> :<%= truncate(@libraries.description, :length => 1000).html_safe %> 
+			    </p>
+			    
+			   
+			</div>
+		</div>
+	</div>
+</div>
