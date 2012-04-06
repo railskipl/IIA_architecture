@@ -1,7 +1,8 @@
 class News < ActiveRecord::Base
 	belongs_to :lecture
+	belongs_to :lalbums
 	attr_accessible :title, :description, :news_photo
 	
-	mount_uploader :news_photo, NewsPhotoUploader
+	accepts_nested_attributes_for :lalbums
 	
 end

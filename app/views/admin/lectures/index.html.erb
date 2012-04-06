@@ -20,8 +20,8 @@
   <tr>
     <td><%= lecture.title %></td>
     <td><%= truncate(lecture.description, :length => 110).html_safe %></td>
-    <td><%= image_tag lecture.lphoto_url(:thumb) if lecture.lphoto? %></td>
-    <td style="text-align: center !important;"> <%= link_to "Edit", edit_admin_lecture_path(lecture), :class=>'button positive' %> &nbsp;&nbsp;</td> 
+    
+    <td style="text-align: center !important;"> <a href="/admin/lectures/<%= lecture.id %>">Show</a>|<%= link_to "Edit", edit_admin_lecture_path(lecture), :class=>'button positive' %> &nbsp;&nbsp;</td> 
 	<td><a href="/admin/lectures/<%= lecture.id %>/delete" :onclick="if(confirm('Are you sure you want to delete this Publication?'))  return true;  else  return false;" :class="button negative" >Delete</a></td>
   </tr>
 <% end %>

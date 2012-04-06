@@ -12,7 +12,7 @@
 	</div>	
 	<div id="gallery">
 		<ul>
-			<% lectures = Lecture.find_all_lectures_id(@lectures.id)%>
+			<% lectures = Lecture.find_all_news_id(@lectures.id)%>
 			<% lectures.each do |lecture| %>
 				<li>
 					<%= link_to image_tag(lecture.lphoto.url(:thumb)), lecture.lphoto.url() %>

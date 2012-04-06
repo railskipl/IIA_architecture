@@ -1,0 +1,26 @@
+<div id="content_area">
+<h1>Architecture Heritage of Nagpur</h1>
+<div class="award_wrap">
+	<div class="award_profile">
+		
+			<% gallery = Gallery.find_by_architect_id(@architects.id, :limit => 1)%>
+			<%= image_tag gallery.pic_url(:big_thumb) %>
+	</div>
+	<div class="award_details">
+		<span class="award_heading"><%= @architects.title%></span>
+		
+	</div>	
+	<div id="gallery">
+		<ul>
+			<% galleries = Gallery.find_all_by_architect_id(@architects.id)%>
+			<% galleries.each do |gallery| %>
+				<li>
+					<%= link_to image_tag(gallery.pic.url(:mid_thumb)), gallery.pic.url() %>
+				</li>
+			<% end %>
+			
+		</ul>
+	</div>	
+	
+</div>
+</div>

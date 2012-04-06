@@ -12,7 +12,7 @@
   <tr class="admintablehd">
     <th width="25%">News Title</th>
     <th width="25%">News Description</th>
-    <th width="25%">Photo</th>
+    
     <th width="25%" style="text-align: center !important;">Action</th>
   </tr>
 
@@ -20,7 +20,7 @@
   <tr>
     <td><%= news.title %></td>
     <td><%= truncate(news.description, :length => 110).html_safe %></td>
-    <td><%= image_tag news.news_photo_url(:thumb) if news.news_photo? %></td>
+    
     <td style="text-align: center !important;"> <%= link_to "Edit", edit_admin_news_path(news), :class=>'button positive' %> &nbsp;&nbsp;</td> 
 	<td><a href="/admin/news/<%= news.id %>/delete" :onclick="if(confirm('Are you sure you want to delete this Publication?'))  return true;  else  return false;" :class="button negative" >Delete</a></td>
   </tr>

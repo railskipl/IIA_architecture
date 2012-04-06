@@ -1,0 +1,3 @@
+
+page.replace_html 'photos_count', "#{pluralize(@user.lalbums.size, "Photo")}"
+page.replace_html 'uploads', :partial => @user.lalbums

@@ -1,0 +1,25 @@
+<div id="content_area">
+<h1>Architecture Heritage of Nagpur</h1>
+
+<div class="col_3" style="width:880px;">
+	
+	<% @architects.each do |architect| %>
+		<div class="profile_1">
+			<%= link_to "#{architect.title}",{:controller=>"architects",:action => 'show', :id=>"#{architect.id}"}, :remote => true  %>
+			
+			<% galleries = Gallery.find_by_architect_id(architect.id, :limit => 1)%>
+			<%= link_to image_tag("#{galleries.pic_url(:big_thumb)}" ,:align => :left, :class => 'profile_image'), {:controller=>"architects",:action => 'show', :id=>"#{architect.id}"}, :remote => true %>
+			
+		 
+		<div class="clear"></div>  
+        </div>
+        
+	<div id="modal-box" style="display:none;"></div>
+	<% end %>
+	<div id="pagination">
+	<ul>
+    	<li><%= will_paginate @architects %></li>
+    </ul>
+</div>
+ </div>
+</div>

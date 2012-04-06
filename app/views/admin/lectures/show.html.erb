@@ -1,0 +1,60 @@
+<%= javascript_include_tag "/assets/swfobject.js", "/assets/jquery.uploadify.v2.1.0.js" %>
+<script type="text/javascript" charset="utf-8">
+
+jQuery(document).ready(function() {
+	
+	jQuery('#lalbum_lectphoto').click(function(event){ 
+		event.preventDefault();
+	}); 
+	
+	jQuery('#lalbum_lectphoto').uploadify({
+  	uploader : '/assets/uploadify/uploadify.swf',
+		cancelImg : '/assets/uploadify/cancel.png',
+		multi : true,
+		auto : true,
+  	script : '/admin/lalbums',
+		onComplete : function(event, queueID, fileObj, response, data) { 
+			var dat = eval('(' + response + ')');
+			jQuery.getScript(dat.upload);},
+  	scriptData : {
+	        '_http_accept': 'application/javascript',
+					'format' : 'json',
+	        '_method': 'post',
+	        
+	        'lecture_id' : '<%= @lecture.id %>'
+	      }
+	});
+	
+	jQuery('#upload_submit').click(function(event){ 
+			event.preventDefault(); 
+			jQuery('#album_photo').uploadifyUpload(); 
+		});
+		
+}); 
+</script>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name: </b>
+  <%= @lecture.title %>
+</p>
+
+<h3 id="photos_count"><%= pluralize(@lecture.lalbums.size, "Photo")%></h3>
+<div id="uploads">
+
+     
+     <%= render :partial => @lecture.lalbums %>
+</div>
+
+     <h3>Upload a Photo</h3> 
+  <%= form_for [:admin, Lalbum.new(:lecture_id => @lecture.id)], :html => {:multipart => true} do |f| %> 
+	    <%= f.hidden_field :lecture_id, :value => @lecture.id %>
+      <p>
+      	<%= f.file_field :lectphoto %> 
+      </p>
+ <% end %>
+
+
+
+

@@ -1,0 +1,17 @@
+<%= link_to  "Add Architect", new_admin_architect_path, :class => 'button positive' %>
+
+<table class="admintable">
+  <tr class="admintablehd">
+    <th width="25%">Title</th>
+    <th width="25%" style="text-align: center !important;">Action</th>
+  </tr>
+
+<% @architects.each do |architect| %>
+  <tr>
+    <td><%= architect.title %></td>
+    <td style="text-align: center !important;"> <a href="/admin/architects/<%= architect.id %>/show">Show</a>|<%= link_to "Edit", edit_admin_architect_path(architect), :class=>'button positive' %> &nbsp;&nbsp;</td> 
+	  <td><a href="/admin/architects/<%= architect.id %>/delete" :onclick="if(confirm('Are you sure you want to delete this Architect?'))  return true;  else  return false;" :class="button negative" >Delete</a></td>
+	
+  </tr>
+<% end %>
+</table>

@@ -1,0 +1,2 @@
+$('#photos_count').html('<%= pluralize(@total_uploads.count, "Pic") %>');
+$('#uploads').append("<%= escape_javascript(render(:partial => "admin/galleries/gallery", :locals => {:gallery => @gallery})) %>");

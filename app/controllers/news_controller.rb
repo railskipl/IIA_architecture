@@ -7,7 +7,8 @@ class NewsController < ApplicationController
 	end
 	
 	def show
-		@lectures = Lecture.find(params[:id])    
+		@lectures = Lecture.find(params[:id])  
+		 
 	end
 	
 end

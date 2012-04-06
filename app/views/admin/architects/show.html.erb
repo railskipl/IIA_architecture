@@ -1,0 +1,59 @@
+<%= javascript_include_tag "/assets/swfobject.js", "/assets/jquery.uploadify.v2.1.0.js" %>
+<script type="text/javascript" charset="utf-8">
+
+jQuery(document).ready(function() {
+	
+	jQuery('#gallery_pic').click(function(event){ 
+		event.preventDefault();
+	}); 
+	
+	jQuery('#gallery_pic').uploadify({
+  	uploader : '/assets/uploadify/uploadify.swf',
+		cancelImg : '/assets/uploadify/cancel.png',
+		multi : true,
+		auto : true,
+  	script : '/admin/galleries',
+		onComplete : function(event, queueID, fileObj, response, data) { 
+			var dat = eval('(' + response + ')');
+			jQuery.getScript(dat.upload);},
+  	scriptData : {
+	        '_http_accept': 'application/javascript',
+					'format' : 'json',
+	        '_method': 'post',
+	        
+	        'architect_id' : '<%= @architect.id %>'
+	      }
+	});
+	
+	jQuery('#upload_submit').click(function(event){ 
+			event.preventDefault(); 
+			jQuery('#album_photo').uploadifyUpload(); 
+		});
+		
+}); 
+</script>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title: </b>
+  <%= @architect.title %>
+</p>
+
+<h3 id="photos_count"><%= pluralize(@architect.galleries.size, "Pic")%></h3>
+<div id="uploads">
+
+     
+     <%= render :partial => @architect.galleries %>
+</div>
+
+     <h3>Upload a Photo</h3> 
+  <%= form_for [:admin, Gallery.new(:architect_id => @architect.id)], :html => {:multipart => true} do |f| %> 
+	    <%= f.hidden_field :architect_id, :value => @architect.id %>
+      <p>
+      <%= f.file_field :pic %> </p>
+ <% end %>
+
+
+
+

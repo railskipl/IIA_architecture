@@ -7,16 +7,20 @@
 </div>
     
     
+    
   <div class="lectures_heading">Lectures and Functions </div>
   
+  
   	<% @lectures.each do |lecture|%>
+  	<div class="lectures_wrap">
 	  	<div class="lectures_profile">
-	       	<%= link_to image_tag("#{lecture.lphoto_url(:thumb)}", :align => :left, :class => "profile_image"), {:controller=>"news",:action => 'show', :id=>"#{lecture.id}"}, :remote => true %>
+	       	<%= link_to image_tag("#{lecture.lectphoto_url(:thumb)}", :align => :left, :class => "profile_image"), {:controller=>"news",:action => 'show', :id=>"#{lecture.id}"}, :remote => true %>
 	   </div>
 		<div class="award_details">
 			<%= link_to "#{lecture.title}", {:controller=>"news",:action => 'show', :id=>"#{lecture.id}"}, :remote => true, :class =>'lectures_link'  %> 
 			
 	  	</div>  
+	  	</div>
   	<% end %>
     
  
