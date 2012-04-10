@@ -3,8 +3,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>The Indian Institute of Architects</title>
-<%= stylesheet_link_tag "committee.css",  "header-menu/fisheye-menu.css", "global.css","dock-example2.css","layout.css", "modalbox" %>
-<%= javascript_include_tag "application" %>
+<%= stylesheet_link_tag "committee.css",  "header-menu/fisheye-menu.css", "global.css","dock-example2.css","layout.css", "modalbox","jquery.lightbox-0.5.css" %>
+<%= javascript_include_tag "application", "jquery.lightbox-0.5.js" %>
+
+<script type="text/javascript">
+    jQuery(function() {
+        jQuery('#gallery a').lightBox();
+    });
+    </script>
 
 </head>
 

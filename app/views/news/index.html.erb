@@ -10,14 +10,20 @@
     
   <div class="lectures_heading">Lectures and Functions </div>
   
-  
+   
   	<% @lectures.each do |lecture|%>
+  	
+  	<% lecture_albums = Lalbum.find_all_by_lecture_id(lecture.id, :limit=>"1") %>
+  	
+  	
   	<div class="lectures_wrap">
+  		<% lecture_albums.each do |lecture_album|%> 
 	  	<div class="lectures_profile">
-	       	<%= link_to image_tag("#{lecture.lectphoto_url(:thumb)}", :align => :left, :class => "profile_image"), {:controller=>"news",:action => 'show', :id=>"#{lecture.id}"}, :remote => true %>
+	       	<%= link_to image_tag("#{lecture_album.lectphoto_url(:thumb)}", :align => :left, :class => "profile_image"), {:controller=>"news",:action => 'show', :id=>"#{lecture_album.lecture_id}"} %>
 	   </div>
+	   <% end %>
 		<div class="award_details">
-			<%= link_to "#{lecture.title}", {:controller=>"news",:action => 'show', :id=>"#{lecture.id}"}, :remote => true, :class =>'lectures_link'  %> 
+			<%= link_to "#{lecture.title}", {:controller=>"news",:action => 'show', :id=>"#{lecture.id}"}, :class =>'lectures_link'  %> 
 			
 	  	</div>  
 	  	</div>
