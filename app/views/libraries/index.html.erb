@@ -12,7 +12,7 @@
 		  <%= link_to "#{library.book_name}", {:controller=>"libraries",:action => 'show', :id=>"#{library.id}"}, :remote => true, :class => 'lectures_link' %> </div>	
       </div>    
  	<% end %>
-  <div id="pagination">
+  <div id="pagination-comp">
     <ul>
     	<li><%= will_paginate @libraries %></li>
     </ul>
