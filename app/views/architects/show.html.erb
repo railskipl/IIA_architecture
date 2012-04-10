@@ -8,7 +8,7 @@
 	</div>
 	<div class="award_details">
 		<span class="award_heading"><%= @architects.title%></span>
-		<p><%= @architects.description%></p>
+		<p><%= @architects.description.html_safe%></p>
 	</div>	
 	<div id="gallery">
 		<ul>
