@@ -1,0 +1,21 @@
+<%= form_for [:admin, @student], :html => { :multipart => true } do |f| %>
+
+<p>
+	<%= f.label :comp_title, 'Student Competition Title'%>
+	<%= f.text_field :comp_title%>
+</p>
+
+<p>
+	<%= f.label :comp_description, 'Student Competition description'%>
+	<%= f.text_area :comp_description, :class => 'tiny_mce' %>
+</p>
+
+<p>
+	<%= f.file_field :comp_photo %>
+</p>
+
+
+
+<p><%= f.submit%></p>
+
+<% end %>

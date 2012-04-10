@@ -13,6 +13,8 @@ IIAArchitechture::Application.routes.draw do
    resources :lectures
    resources :lalbums
    resources :architects
+   resources :students
+   resources :memberships
    
   
    namespace :admin do 
@@ -47,10 +49,18 @@ IIAArchitechture::Application.routes.draw do
      match '/architects/:id/show' => 'architects#show'
      resources :architects 
      
-      match '/galleries/:id/delete' => "galleries#destroy"   
+     match '/galleries/:id/delete' => "galleries#destroy"   
      resources :galleries
      
+     match '/memberships/:id/delete' => 'memberships#destroy'
+     match '/memberships/:id/show' => 'memberships#show'
+     resources :memberships 
     
+     match '/students/:id/delete' => "students#destroy"   
+     resources :students
+     
+     match '/winners/:id/delete' => "winners#destroy"   
+     resources :winners
    
    end
   match '/home' => 'home#index'

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  comp_title: MyString
+  comp_description: MyText
+  comp_photo: MyString
+
+two:
+  comp_title: MyString
+  comp_description: MyText
+  comp_photo: MyString

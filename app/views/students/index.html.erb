@@ -1,0 +1,55 @@
+<div class="news_heading">Student Zone</div>
+
+<div class="competitons_heading">Student Competitions </div>
+<% @students.each do |student|%>
+<div class="lectures_wrap">
+	
+    	
+        <div class="competitons_profile">
+        	
+        	<%= image_tag student.comp_photo_url(:thumb) , :float => :left %>
+       	</div>
+			<div class="award1_details">
+
+			  <div class="competitons_link"><%= student.comp_title%></div> </div>	
+ 		<div class="description"><%= truncate(student.comp_description, :length => 110).html_safe %></div>
+ 		
+ 		
+ 			 
+</div>
+<% end %> 
+<div id="pagination-comp">
+    	<ul>
+    		<li><%= will_paginate @students %></li>
+    	</ul>
+   
+</div>	
+
+
+<div class="competitons_heading">Award Winning Entries </div>
+    	<% @winners.each do |winner|%>
+<div class="lectures_wrap">
+	
+        <div class="competitons_profile">
+        	
+        	<%= image_tag winner.winner_photo_url(:thumb) , :float => :left %>
+       	</div>
+			<div class="award_details">
+
+			  <p class="competitons_link"><%= winner.title%></p> </div>	
+ 		<div class="description"><%= truncate(winner.description, :length => 110).html_safe %></div>
+ 		
+ 		
+ 			 
+</div>
+ <% end %> 
+ <div id="pagination-comp">
+    	<ul>
+    		<li><%= will_paginate @winners %></li>
+    	</ul>
+   
+</div>    
+	
+
+ </div>
+      <div id="content_area_bottom"></div> 

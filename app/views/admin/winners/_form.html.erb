@@ -1,0 +1,21 @@
+<%= form_for [:admin, @winner], :html => { :multipart => true } do |f| %>
+
+<p>
+	<%= f.label :title, 'Award winning entry Title'%>
+	<%= f.text_field :title%>
+</p>
+
+<p>
+	<%= f.label :description, 'Award winning entry description'%>
+	<%= f.text_area :description, :class => 'tiny_mce' %>
+</p>
+
+<p>
+	<%= f.file_field :winner_photo %>
+</p>
+
+
+
+<p><%= f.submit%></p>
+
+<% end %>

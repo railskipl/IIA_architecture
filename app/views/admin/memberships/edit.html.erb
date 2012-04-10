@@ -1,0 +1,15 @@
+<%= form_for [:admin, @membership] do |f| %>
+
+<p>
+	<%= f.label :title, 'Membership Title'%>
+	<%= f.text_field :title%>
+</p>
+
+<p>
+	<%= f.label :description, 'Membership description'%>
+	<%= f.text_area :description, :class => 'tiny_mce' %>
+</p>
+
+<p> <%= render :partial =>"button" %></p>
+
+<% end %>

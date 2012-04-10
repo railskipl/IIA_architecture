@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120406054930) do
+ActiveRecord::Schema.define(:version => 20120410045622) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                             :default => "", :null => false
@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(:version => 20120406054930) do
     t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "description"
   end
 
   create_table "awards", :force => true do |t|
@@ -73,11 +74,13 @@ ActiveRecord::Schema.define(:version => 20120406054930) do
     t.string   "lectphoto"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "news_id"
   end
 
   create_table "lectures", :force => true do |t|
     t.string   "title"
     t.string   "description"
+    t.string   "lphoto"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -104,6 +107,13 @@ ActiveRecord::Schema.define(:version => 20120406054930) do
     t.datetime "updated_at"
   end
 
+  create_table "memberships", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "news", :force => true do |t|
     t.string   "title"
     t.string   "description"
@@ -117,6 +127,38 @@ ActiveRecord::Schema.define(:version => 20120406054930) do
     t.string   "author"
     t.text     "description"
     t.string   "pdf"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "students", :force => true do |t|
+    t.string   "comp_title"
+    t.text     "comp_description"
+    t.string   "comp_photo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tiny_prints", :force => true do |t|
+    t.string   "image_file_name"
+    t.string   "image_file_size"
+    t.string   "image_content_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tiny_videos", :force => true do |t|
+    t.string   "original_file_name"
+    t.string   "original_file_size"
+    t.string   "original_content_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "winners", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "winner_photo"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

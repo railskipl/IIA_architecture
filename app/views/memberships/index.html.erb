@@ -1,0 +1,18 @@
+<div class="news_heading">IIA Membership</div>
+
+
+<% @memberships.each do |membership|%>
+<div class="lectures_wrap">
+	<div class="award_heading">
+		<%= membership.title %>
+	</div>
+	
+       <%= membership.description.html_safe%>
+       	 
+       	
+	</div>
+	<% end %>
+
+      
+ </div>
+	  <div id="content_area_bottom"></div> 

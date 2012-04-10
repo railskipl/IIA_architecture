@@ -1,0 +1,31 @@
+<p class='buttons'>
+
+    <%= link_to  "Add Competition", new_admin_student_path, :class => 'button positive' %>
+</p>
+
+<p class='buttons'>
+
+   <a href="/admin/winners/new">Add Award Winning entries</a>
+</p>
+<table class="admintable">
+  <tr class="admintablehd">
+    <th width="25%">Title</th>
+    <th width="25%">Description</th>			    
+    <th  width="25%">Image</th>
+    
+    <th width="25%" style="text-align: center !important;">Action</th>
+  </tr>
+
+<% @students.each do |student| %>
+  <tr>
+    <td><%= student.comp_title %></td>
+    <td><%= truncate(student.comp_description, :length => 110).html_safe %></td>
+    <td><%= image_tag student.comp_photo_url(:thumb) if student.comp_photo? %></td> 
+    <td style="text-align: center !important;"> <%= link_to "Edit", edit_admin_student_path(student), :class=>'button positive' %> &nbsp;&nbsp;</td> 
+	<td><a href="/admin/students/<%= student.id %>/delete" :onclick="if(confirm('Are you sure you want to delete this Competition?'))  return true;  else  return false;" :class="button negative" >Delete</a></td>
+	
+    
+  </tr>
+<% end %>
+</table>
+<br />

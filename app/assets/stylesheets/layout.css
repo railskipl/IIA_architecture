@@ -684,3 +684,34 @@ background:url(/assets/bottom_curve.png) no-repeat top left;
     line-height:40px;
     float:right
 }
+
+
+#pagination-comp {
+    
+    float: right;
+    margin-right: 20px;
+    
+}
+
+#pagination-comp ul {
+	margin:0;
+	padding:0;
+	list-style:none
+}
+
+#pagination-comp ul li {
+	display: inline
+	
+}
+
+#pagination-comp ul li a {
+	font-size:11px; text-align:center;
+	padding:5px 8px 5px 8px;
+	background:#333333;
+	color:#fff;
+	text-decoration:none
+}
+
+#pagination-comp ul li a:hover {
+	background:#000
+}
