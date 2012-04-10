@@ -2,7 +2,7 @@
 <div class="award_heading">What's New</div>
 <div>
       <% @news.each do |news|%>
-     	<p><%= news.title %>: <%= news.description %></p>
+     	<p><%= news.title %>: <%= news.description.html_safe %></p>
      <% end %>
 </div>
     
