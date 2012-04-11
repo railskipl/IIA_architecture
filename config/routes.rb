@@ -1,5 +1,6 @@
 IIAArchitechture::Application.routes.draw do 
   
+  
   get "lalbums/controller"
 
   devise_for :admins, :path_names => { :sign_in =>"login", :sign_out =>"logout"}
@@ -15,6 +16,7 @@ IIAArchitechture::Application.routes.draw do
    resources :architects
    resources :students
    resources :memberships
+   resources :pictures
    
   
    namespace :admin do 
@@ -28,9 +30,11 @@ IIAArchitechture::Application.routes.draw do
      
      match '/awards/:id/delete'  => 'awards#destroy'
      match '/awards/:id/show' => 'awards#show'
-     resources :awards 
-      match '/albums/:id/delete' => "albums#destroy"   
+     resources :awards
+      
+     match '/albums/:id/delete' => "albums#destroy"   
      resources :albums
+     
      match '/publications/:id/delete' => "publications#destroy"
      resources :publications
      
@@ -61,6 +65,15 @@ IIAArchitechture::Application.routes.draw do
      
      match '/winners/:id/delete' => "winners#destroy"   
      resources :winners
+     
+     match '/pictures/:id/delete'  => 'pictures#destroy'
+     match '/pictures/:id/show' => 'pictures#show'
+     resources :pictures
+      
+     match '/palbums/:id/delete' => "palbums#destroy"   
+     resources :palbums
+     
+     
    
    end
   match '/home' => 'home#index'
