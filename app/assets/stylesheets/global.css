@@ -135,11 +135,11 @@ cursor:default;
 
 .lectures_profile{ width:50px; height:50px; float:left; margin:0 10px 10px 0}
 
-.lectures_heading{ color:#fff; font-size:12px; font-weight:bold; float:left; width:100%; margin:10px 0 10px 0}
+.lectures_heading{ color:#fff; font-size:14px; font-weight:bold; float:left; width:100%; margin:10px 0 10px 0}
 
 .news_heading{ color:#CBCBCB; font-size:22px; font-weight:bold; float:left; width:100%; margin:0 0 10px 0}
 
-.lectures_link{ font-size:18px; font-weight:bold; color:#000000; text-decoration:underline}
+.lectures_link{ font-size:14px; font-weight:bold; color:#000000; text-decoration:underline}
 .lectures_link:hover{color:#fff; text-decoration:underline}
 
 
