@@ -667,7 +667,8 @@ background:url(/assets/middle_space.png) repeat-y top left;
     width:auto;
     height:auto;
     overflow:hidden;
-    padding:0px 20px 0px 20px
+    padding:0px 20px 0px 20px;
+    color: #3D3D3D;
 }
 
 
