@@ -319,6 +319,18 @@ img {
 }
 
 .profile_image{padding-right:5px; padding-bottom:20px; width:65px; height:65px}
+.year_image{ border: 5px solid #3D3D3D !important;
+    height: 100px;
+    margin-bottom: 20px;
+    margin-right: 109px;
+    width: 100px;}
+    
+.year_big_image{ 
+   
+    margin-bottom: 20px;
+    margin-right: 109px;
+    width: 362px;}
+    
 #mask {
   position:absolute;
   left:0;

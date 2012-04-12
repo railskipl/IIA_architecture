@@ -1,0 +1,16 @@
+<div>
+	<div id="dialog2" class="window">
+		<div class="inner" style="font-weight:normal;">
+			<div>
+				
+				<p style="width :100px">
+					<%= image_tag @yralbums.yrphoto_url(), :class => "year_big_image" %>
+						
+				</p>
+			    
+			    <% book = Book.find_by_id(@yralbums.book_id)%>
+			   <span style="float:right"> <h2><%= link_to("Download PDF ", book.yrpdf_url, :class => :pdf) %></h2></span>
+			</div>
+		</div>
+	</div>
+</div>

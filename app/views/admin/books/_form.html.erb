@@ -1,0 +1,9 @@
+<%= form_for [:admin, @book], :html => { :multipart => true } do |f| %>
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title, :class => 'text' %>
+  </p>
+  <%= f.file_field :yrpdf %>
+  
+  <%= render :partial =>"button" %>
+<% end %>

@@ -1,0 +1,8 @@
+
+<div class="upload"> 
+  
+    <%= image_tag yralbum.yrphoto.url(:thumb) %>
+  
+  <%= link_to 'Remove',{ :controller=>"yralbums", :action => 'destroy', :id => yralbum.id }, :id=>'as', :remote => true %>
+  
+</div>

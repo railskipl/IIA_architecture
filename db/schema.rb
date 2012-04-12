@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120411091828) do
+ActiveRecord::Schema.define(:version => 20120412052938) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                             :default => "", :null => false
@@ -47,6 +47,13 @@ ActiveRecord::Schema.define(:version => 20120411091828) do
   create_table "awards", :force => true do |t|
     t.string   "title"
     t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "books", :force => true do |t|
+    t.string   "title"
+    t.string   "yrpdf"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -172,6 +179,13 @@ ActiveRecord::Schema.define(:version => 20120411091828) do
     t.string   "title"
     t.text     "description"
     t.string   "winner_photo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "yralbums", :force => true do |t|
+    t.integer  "book_id"
+    t.string   "yrphoto"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

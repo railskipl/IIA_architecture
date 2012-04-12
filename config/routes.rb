@@ -17,6 +17,7 @@ IIAArchitechture::Application.routes.draw do
    resources :students
    resources :memberships
    resources :pictures
+   resources :books
    
   
    namespace :admin do 
@@ -72,6 +73,13 @@ IIAArchitechture::Application.routes.draw do
       
      match '/palbums/:id/delete' => "palbums#destroy"   
      resources :palbums
+     
+     match '/books/:id/delete'  => 'books#destroy'
+     match '/books/:id/show' => 'books#show'
+     resources :books
+      
+     match '/yralbums/:id/delete' => "yralbums#destroy"   
+     resources :yralbums
      
      
    

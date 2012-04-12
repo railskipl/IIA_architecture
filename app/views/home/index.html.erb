@@ -13,10 +13,13 @@
 	
     	<h2>News and Events</h2>
 		<marquee onmouseover=this.stop() onmouseout=this.start() scrollAmount=2 scrollDelay=2 direction=up style="height:180px;">
-        <p><strong>The programmes and events organised by The Indian Institute of Architects, Nagpur Centre during the term 2008- 10 are as follows.</strong> <br />
-1.Environment Friendly Architecture– The Nagpur Centre of The Indian Institute of Architects started its activities for the term 2008 -10 with an audio visual presentation on “Environment Friendly Architecture” by well known architect Ar. Deenbandhu Upasani, Mumbai. The presentation was 
+			<% @news.each do |news|%>
+       			   <p><strong><%= news.title %></strong> <br />
+				   <%= news.description.html_safe %>
  </p>
+ <% end %>
   </marquee>
+  
  <h2>Architecture Institutions</h2>
  <ul>
  	<li>Sample text here</li>

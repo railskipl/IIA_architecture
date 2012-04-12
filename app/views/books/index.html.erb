@@ -1,0 +1,21 @@
+<h1>Year Books</h1>
+            	 <div id="modal-box" style="display:none;"></div>
+
+    <div id="profile_1">
+    	 <ul style="width:700px;margin-left:115px">
+    	<% @books.each do |book|%>
+    		
+        		<li>
+        			<% yralbums = Yralbum.find_all_by_book_id(book.id)%>
+        			<% yralbums.each do |yralbum|%>
+        			
+        			 <%= link_to image_tag("#{yralbum.yrphoto_url(:thumb)}", :align => :left, :class => "year_image"), {:controller=>"books",:action => 'show', :id=>"#{yralbum.id}"}, :remote => true %>
+        			         			 
+        			<% end %>
+        			
+        		</li> 
+        	
+    	<% end %>
+    	</ul>
+    </div>
+
