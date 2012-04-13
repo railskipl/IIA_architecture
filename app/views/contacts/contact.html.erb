@@ -1,0 +1,71 @@
+<div class="news_heading">Contact Us</div>
+   <div id="contact_left">
+   	<%= form_for :contact, :html=>{:id=>'contactform'} do |f|%>
+        <table width="100%" border="0" align="left" cellpadding="0" cellspacing="5">
+          <tr>
+            <td>Name <span style="color :#FF0000">*</span></td>
+          </tr>
+          <tr>
+            <td>
+            	<%= f.text_field :name, :class => "contact_field"%>
+              
+           </td>
+          </tr>
+          <tr>
+            <td>Email <span style="color :#FF0000">*</span></td>
+          </tr>
+          <tr>
+            <td>
+            	<%= f.text_field :email, :class => "contact_field"%>
+            </td>
+          </tr>
+          <tr>
+            <td>Contact No. <span style="color :#FF0000">*</span> </td>
+          </tr>
+          <tr>
+            <td>
+            	<%= f.text_field :phone, :class => "contact_field"%>
+            </td>
+          </tr>
+          <tr>
+            <td>Message <span style="color :#FF0000">*</span></td>
+          </tr>
+          <tr>
+            <td>
+            	<%= f.text_area :message, :class => "contact_field2", :rows => "10"%>
+            </td>
+          </tr>
+          <tr>
+            <td>
+            	<%= submit_tag 'Submit', :class => "contact_submit" %>
+              
+           </td>
+          </tr>
+        </table>
+        <% end %>
+      </div>
+   
+     <div id="contact_right">
+     
+     <div>
+      <strong>Indian Institute of Architects</strong> <br />
+         5th Floor, B Wing, Shriram Shyam Towers,
+		 Kingsway, NAGPUR - 440 001
+       <p>Phone:(0712) 6556608. </p></div>
+      
+        <div>
+      <strong>Indian Institute of Architects</strong> <br />
+         5th Floor, B Wing, Shriram Shyam Towers,
+		 Kingsway, NAGPUR - 440 001
+       <p>Phone:(0712) 6556608.</p></div>
+     </div>
+   
+   
+
+    <div>
+      <p>&nbsp;</p>
+    </div>
+    </div>
+      <div id="content_area_bottom"></div> 
+
+    

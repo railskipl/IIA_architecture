@@ -4,12 +4,64 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>The Indian Institute of Architects</title>
 <%= stylesheet_link_tag "committee.css",  "header-menu/fisheye-menu.css", "global.css","dock-example2.css","layout.css", "modalbox","jquery.lightbox-0.5.css" %>
-<%= javascript_include_tag "application", "jquery.lightbox-0.5.js" %>
+<%= javascript_include_tag "application", "jquery.lightbox-0.5.js", "jquery.validate.min.js" %>
 
 <script type="text/javascript">
     jQuery(function() {
         jQuery('#gallery a').lightBox();
     });
+    
+  jQuery(document).ready(function() {
+  jQuery("#contactform").validate({
+	errorElement:'div',
+	rules: {
+		"contact[name]":{
+					                  required: true,
+                        			character:true,
+     					              maxlength:49
+			},
+		
+		"contact[email]":{
+						required:true,
+						email:true
+		},
+		"contact[phone]":{
+						required:true
+						
+		},
+		
+		"contact[message]":{
+						required:true,
+							minlength:10,
+						maxlength:499
+		}
+		},
+	messages: {
+		"contact[name]":{
+			required: "Please enter name",
+                        character: "Please enter only character",
+			                  maxlength:jQuery.format("do not enter more than 50 charecter")
+			},
+		
+		"contact[email]":{
+						            required: "Please enter email address",
+						            email: "Please enter valid email id"
+						
+		},
+		
+		"contact[phone]":{
+						            required: "Please enter phone number"
+						            
+						
+		},
+		"contact[message]":{
+						            required: "Please enter message",
+						            minlength:jQuery.format("Please enter at least 10 characters."),
+						            maxlength:jQuery.format("Can not exceed 500 characters")
+		}
+		}
+	});
+});
     </script>
 
 </head>
@@ -96,7 +148,7 @@
 				</a>
 			</li>
 			<li style="padding-left:79px;clear :left">
-				<a class="fisheye" href="#12">
+				<a class="fisheye" href="/contacts">
 					<img src="/assets/headermenu/contactus.png" />
 						<span style="position:absolute;top:10px;left:140px;width:89px;padding:4px;margin:0;color:#cbcbcb;font-size:13px; ">CONTACT US</span>
 				</a>

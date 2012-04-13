@@ -18,6 +18,7 @@ IIAArchitechture::Application.routes.draw do
    resources :memberships
    resources :pictures
    resources :books
+   match '/contacts' => "contacts#contact"
    
   
    namespace :admin do 
