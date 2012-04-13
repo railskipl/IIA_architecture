@@ -2,7 +2,8 @@
 <div class="upload"> 
   
     <%= image_tag lalbum.lectphoto.url(:thumb) %>
+	  
+    <%= link_to 'Remove',{ :controller=>"lalbums", :action => 'destroy', :id => lalbum.id }, :id=>'as', :remote => true %>
   
-  <%= link_to 'Remove',{ :controller=>"lalbums", :action => 'destroy', :id => lalbum.id }, :id=>'as', :remote => true %>
   
 </div>

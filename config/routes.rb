@@ -48,6 +48,7 @@ IIAArchitechture::Application.routes.draw do
      match '/libraries/:id/delete' => "libraries#destroy"
      resources :libraries
      
+     match '/lalbums/:id/delete' => "lalbums#destroy"
      resources :lalbums
      
      match '/architects/:id/delete' => 'architects#destroy'
