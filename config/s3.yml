@@ -1,15 +1,15 @@
 common: &common
-    access_key_id: AKIAIWWQF5REKTC4ZYGQ
-    secret_access_key: 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
+    access_key_id: 
+    secret_access_key: 
 
 development:
     <<: *common
-    bucket: iianagpur
+    bucket: 
 
 test:
     <<: *common
-    bucket: iianagpur
+    bucket: 
 
 production:
     <<: *common
-    bucket: iianagpur
+    bucket: 
